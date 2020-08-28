@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct TabbarMainView: View {
-    @State var tabSelection = 1
+    @State var tabSelection = 0
     @State var navTitles : [String] = ["Contactos", "Chats", "Ajustes"]
     
     var body: some View {
