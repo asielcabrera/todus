@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8122CB4024F881890008CD6D /* TabbarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB3F24F881890008CD6D /* TabbarMainView.swift */; };
 		B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016224F0C31C0052E7CD /* AppDelegate.swift */; };
 		B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016424F0C31C0052E7CD /* SceneDelegate.swift */; };
 		B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B221016624F0C31C0052E7CD /* todus.xcdatamodeld */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8122CB3F24F881890008CD6D /* TabbarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarMainView.swift; sourceTree = "<group>"; };
 		B221015F24F0C31C0052E7CD /* todus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B221016224F0C31C0052E7CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B221016424F0C31C0052E7CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8122CB3E24F8816B0008CD6D /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				8122CB3F24F881890008CD6D /* TabbarMainView.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
 		B221015624F0C31C0052E7CD = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		B221017A24F0C34E0052E7CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8122CB3E24F8816B0008CD6D /* TabbarController */,
 				B221018524F0C58E0052E7CD /* Shapes */,
 				B221017D24F0C48F0052E7CD /* Chat */,
 				B221017F24F0C4B40052E7CD /* Groups */,
@@ -263,6 +274,7 @@
 				B221019524F0D21B0052E7CD /* CellView.swift in Sources */,
 				B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */,
 				B221019724F0D2A10052E7CD /* ConversationDetail.swift in Sources */,
+				8122CB4024F881890008CD6D /* TabbarMainView.swift in Sources */,
 				B221018224F0C4FF0052E7CD /* Groups.swift in Sources */,
 				B221018B24F0CC9B0052E7CD /* Chats.swift in Sources */,
 			);
