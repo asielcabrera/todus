@@ -18,7 +18,7 @@ struct CenterView: View {
             List(data){i in
                 
                 if i.id == 0{
-                    NavigationLink(destination: ConversationDetail()) {
+                    NavigationLink(destination: ContentMessageView(contentMessage: "Hello word", isCurrentUser: true)) {
                         CellView(data : i)
                     }
                     
@@ -33,7 +33,7 @@ struct CenterView: View {
                 }
                 else{
                    
-                    NavigationLink(destination: ConversationDetail()) {
+                    NavigationLink(destination: ContentMessageView(contentMessage: "Hello word", isCurrentUser: true)) {
                         CellView(data : i)
                     }
                         
