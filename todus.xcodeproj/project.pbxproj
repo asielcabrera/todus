@@ -17,6 +17,18 @@
 		8122CB4F24F9435A0008CD6D /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB4E24F943590008CD6D /* ChatHelper.swift */; };
 		8122CB5124F943B50008CD6D /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5024F943B50008CD6D /* DataSource.swift */; };
 		8122CB5324F9458F0008CD6D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5224F9458F0008CD6D /* ChatView.swift */; };
+		8122CB5524F94A1E0008CD6D /* InputMessageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5424F94A1E0008CD6D /* InputMessageBar.swift */; };
+		8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5624F955380008CD6D /* MultilineTextField.swift */; };
+		8122CB5924F9565A0008CD6D /* KeyboardHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5824F9565A0008CD6D /* KeyboardHost.swift */; };
+		8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5A24F95A430008CD6D /* KeyboardAware.swift */; };
+		8122CB6424F974700008CD6D /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6324F974700008CD6D /* KeyboardAdaptive.swift */; };
+		8122CB6624F9748E0008CD6D /* KeyboardHeightPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6524F9748E0008CD6D /* KeyboardHeightPublisher.swift */; };
+		8122CB6824F974A50008CD6D /* UIResponder+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6724F974A50008CD6D /* UIResponder+Current.swift */; };
+		8122CB7024F9BC880008CD6D /* KeyboardAvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6F24F9BC880008CD6D /* KeyboardAvoider.swift */; };
+		8122CB7224F9BCA60008CD6D /* KeyboardAvoiderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7124F9BCA60008CD6D /* KeyboardAvoiderModifier.swift */; };
+		8122CB7424F9BCBF0008CD6D /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */; };
+		8122CB7624F9BCEF0008CD6D /* UIResponder_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */; };
+		8122CB7824F9CDA20008CD6D /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7724F9CDA20008CD6D /* CustomTextView.swift */; };
 		B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016224F0C31C0052E7CD /* AppDelegate.swift */; };
 		B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016424F0C31C0052E7CD /* SceneDelegate.swift */; };
 		B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B221016624F0C31C0052E7CD /* todus.xcdatamodeld */; };
@@ -47,6 +59,18 @@
 		8122CB4E24F943590008CD6D /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
 		8122CB5024F943B50008CD6D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = todus/Views/Chat/conversation/DataSource.swift; sourceTree = SOURCE_ROOT; };
 		8122CB5224F9458F0008CD6D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8122CB5424F94A1E0008CD6D /* InputMessageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMessageBar.swift; sourceTree = "<group>"; };
+		8122CB5624F955380008CD6D /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		8122CB5824F9565A0008CD6D /* KeyboardHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHost.swift; sourceTree = "<group>"; };
+		8122CB5A24F95A430008CD6D /* KeyboardAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAware.swift; sourceTree = "<group>"; };
+		8122CB6324F974700008CD6D /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		8122CB6524F9748E0008CD6D /* KeyboardHeightPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeightPublisher.swift; sourceTree = "<group>"; };
+		8122CB6724F974A50008CD6D /* UIResponder+Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Current.swift"; sourceTree = "<group>"; };
+		8122CB6F24F9BC880008CD6D /* KeyboardAvoider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoider.swift; sourceTree = "<group>"; };
+		8122CB7124F9BCA60008CD6D /* KeyboardAvoiderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiderModifier.swift; sourceTree = "<group>"; };
+		8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder_Extension.swift; sourceTree = "<group>"; };
+		8122CB7724F9CDA20008CD6D /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		B221015F24F0C31C0052E7CD /* todus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B221016224F0C31C0052E7CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B221016424F0C31C0052E7CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,11 +114,38 @@
 		8122CB4124F885110008CD6D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8122CB6E24F9BC590008CD6D /* MyKeyboardAvoider */,
+				8122CB5E24F968D00008CD6D /* For Keyboard */,
 				8122CB4224F8852D0008CD6D /* ContactChatCell.swift */,
 				8122CB4424F885880008CD6D /* InitialLettersView.swift */,
 				8122CB4624F885BC0008CD6D /* CounterNotifications.swift */,
+				8122CB5624F955380008CD6D /* MultilineTextField.swift */,
+				8122CB5824F9565A0008CD6D /* KeyboardHost.swift */,
+				8122CB5A24F95A430008CD6D /* KeyboardAware.swift */,
+				8122CB7724F9CDA20008CD6D /* CustomTextView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		8122CB5E24F968D00008CD6D /* For Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8122CB6324F974700008CD6D /* KeyboardAdaptive.swift */,
+				8122CB6524F9748E0008CD6D /* KeyboardHeightPublisher.swift */,
+				8122CB6724F974A50008CD6D /* UIResponder+Current.swift */,
+			);
+			path = "For Keyboard";
+			sourceTree = "<group>";
+		};
+		8122CB6E24F9BC590008CD6D /* MyKeyboardAvoider */ = {
+			isa = PBXGroup;
+			children = (
+				8122CB6F24F9BC880008CD6D /* KeyboardAvoider.swift */,
+				8122CB7124F9BCA60008CD6D /* KeyboardAvoiderModifier.swift */,
+				8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */,
+				8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */,
+			);
+			path = MyKeyboardAvoider;
 			sourceTree = "<group>";
 		};
 		B221015624F0C31C0052E7CD = {
@@ -214,6 +265,7 @@
 				8122CB4C24F9416C0008CD6D /* MessageView.swift */,
 				8122CB4E24F943590008CD6D /* ChatHelper.swift */,
 				8122CB5224F9458F0008CD6D /* ChatView.swift */,
+				8122CB5424F94A1E0008CD6D /* InputMessageBar.swift */,
 			);
 			path = conversation;
 			sourceTree = "<group>";
@@ -242,6 +294,8 @@
 			dependencies = (
 			);
 			name = todus;
+			packageProductDependencies = (
+			);
 			productName = todus;
 			productReference = B221015F24F0C31C0052E7CD /* todus.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +324,8 @@
 				Base,
 			);
 			mainGroup = B221015624F0C31C0052E7CD;
+			packageReferences = (
+			);
 			productRefGroup = B221016024F0C31C0052E7CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,6 +355,7 @@
 			files = (
 				B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */,
 				B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */,
+				8122CB7824F9CDA20008CD6D /* CustomTextView.swift in Sources */,
 				B221017C24F0C41D0052E7CD /* Home.swift in Sources */,
 				8122CB4524F885880008CD6D /* InitialLettersView.swift in Sources */,
 				8122CB5324F9458F0008CD6D /* ChatView.swift in Sources */,
@@ -308,19 +365,30 @@
 				B221018424F0C5270052E7CD /* Settings.swift in Sources */,
 				B221019124F0D01A0052E7CD /* CenterView.swift in Sources */,
 				8122CB4724F885BC0008CD6D /* CounterNotifications.swift in Sources */,
+				8122CB7024F9BC880008CD6D /* KeyboardAvoider.swift in Sources */,
 				B221018F24F0CE3B0052E7CD /* TopView.swift in Sources */,
 				8122CB4B24F93DC30008CD6D /* MockMessage.swift in Sources */,
 				8122CB5124F943B50008CD6D /* DataSource.swift in Sources */,
+				8122CB6424F974700008CD6D /* KeyboardAdaptive.swift in Sources */,
 				8122CB4D24F9416C0008CD6D /* MessageView.swift in Sources */,
+				8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */,
+				8122CB5524F94A1E0008CD6D /* InputMessageBar.swift in Sources */,
 				8122CB4F24F9435A0008CD6D /* ChatHelper.swift in Sources */,
 				B221019524F0D21B0052E7CD /* CellView.swift in Sources */,
+				8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */,
 				B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */,
+				8122CB6624F9748E0008CD6D /* KeyboardHeightPublisher.swift in Sources */,
+				8122CB6824F974A50008CD6D /* UIResponder+Current.swift in Sources */,
+				8122CB7424F9BCBF0008CD6D /* KeyboardHandler.swift in Sources */,
+				8122CB7224F9BCA60008CD6D /* KeyboardAvoiderModifier.swift in Sources */,
 				8122CB4924F93D9D0008CD6D /* MockUser.swift in Sources */,
 				B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */,
 				8122CB4324F8852D0008CD6D /* ContactChatCell.swift in Sources */,
+				8122CB5924F9565A0008CD6D /* KeyboardHost.swift in Sources */,
 				8122CB4024F881890008CD6D /* TabbarMainView.swift in Sources */,
 				B221018224F0C4FF0052E7CD /* Groups.swift in Sources */,
 				B221018B24F0CC9B0052E7CD /* Chats.swift in Sources */,
+				8122CB7624F9BCEF0008CD6D /* UIResponder_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,14 +526,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"todus/Preview Content\"";
-				DEVELOPMENT_TEAM = 6VBNBCMGX8;
+				DEVELOPMENT_TEAM = X4R2V67R3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = todus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loghorizon.todus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iGhost.todus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,14 +546,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"todus/Preview Content\"";
-				DEVELOPMENT_TEAM = 6VBNBCMGX8;
+				DEVELOPMENT_TEAM = X4R2V67R3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = todus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loghorizon.todus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iGhost.todus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

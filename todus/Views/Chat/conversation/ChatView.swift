@@ -8,42 +8,44 @@
 
 import SwiftUI
 import Combine
+import UIKit
 
 struct ChatView: View {
     @State var typingMessage: String = ""
     @EnvironmentObject var chatHelper: ChatHelper
     
     init() {
-       UITableView.appearance().separatorStyle = .none
-       UITableView.appearance().tableFooterView = UIView()
+        UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().tableFooterView = UIView()
+        //  dismiss keyboard when gesture down
+        UIScrollView.appearance().keyboardDismissMode = .interactive
+        
     }
     
     var body: some View {
         NavigationView {
-        VStack {
-           List {
-               ForEach(chatHelper.realTimeMessages, id: \.self) { msg in
-                  MessageView(currentMessage: msg)
+            VStack {
+                
+                List(chatHelper.realTimeMessages, id: \.self) { msg in
+                    MessageView(currentMessage: msg)
+                }.onTapGesture {
+                    self.endEditing(true)
                 }
-           }
-           HStack {
-               TextField("Message...", text: $typingMessage)
-                  .textFieldStyle(RoundedBorderTextFieldStyle())
-                  .frame(minHeight: CGFloat(30))
-                Button(action: sendMessage) {
-                    Text("Send")
-                 }
-            }.frame(minHeight: CGFloat(50)).padding()
-        }
+                
+                
+                    InputMessageBar(typingMessage: $typingMessage).environmentObject(chatHelper)
+//                .avoidKeyboard()
+                
+            }
+//            .keyboardAdaptive()
+            .keyboardAware()
             .navigationBarTitle(Text(DataSource.mockusers[0].name), displayMode: .inline)
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
     
     
-    func sendMessage() {
-        chatHelper.sendMessage(MockMessage(content: typingMessage, mockuser: DataSource.mockusers[1]))
-        typingMessage = ""
-    }
+    
 }
 
 struct ChatView_Previews: PreviewProvider {
