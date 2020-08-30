@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct CustomScrollView<Content>: View where Content: View {
     var axes: Axis.Set = .vertical

@@ -27,12 +27,11 @@ struct ChatView: View {
             VStack {
                 CustomScrollView(scrollToEnd: true) {
                     ForEach(self.chatHelper.realTimeMessages, id: \.self) { msg in
-                     MessageView(currentMessage: msg)
+                        MessageView(currentMessage: msg)
+                    }.padding(.vertical, 15)
                     
-                    }
-                    .onTapGesture {
-                        self.endEditing(true)
-                    }
+                }.onTapGesture {
+                    self.endEditing(true)
                 }
             
                     InputMessageBar(typingMessage: $typingMessage).environmentObject(chatHelper)
