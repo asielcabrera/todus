@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,16 +21,11 @@
 		8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5624F955380008CD6D /* MultilineTextField.swift */; };
 		8122CB5924F9565A0008CD6D /* KeyboardHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5824F9565A0008CD6D /* KeyboardHost.swift */; };
 		8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5A24F95A430008CD6D /* KeyboardAware.swift */; };
-		8122CB6424F974700008CD6D /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6324F974700008CD6D /* KeyboardAdaptive.swift */; };
-		8122CB6624F9748E0008CD6D /* KeyboardHeightPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6524F9748E0008CD6D /* KeyboardHeightPublisher.swift */; };
-		8122CB6824F974A50008CD6D /* UIResponder+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6724F974A50008CD6D /* UIResponder+Current.swift */; };
-		8122CB7024F9BC880008CD6D /* KeyboardAvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB6F24F9BC880008CD6D /* KeyboardAvoider.swift */; };
-		8122CB7224F9BCA60008CD6D /* KeyboardAvoiderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7124F9BCA60008CD6D /* KeyboardAvoiderModifier.swift */; };
-		8122CB7424F9BCBF0008CD6D /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */; };
-		8122CB7624F9BCEF0008CD6D /* UIResponder_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */; };
-		8122CB7824F9CDA20008CD6D /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7724F9CDA20008CD6D /* CustomTextView.swift */; };
 		81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF317D24FC129D00FE2F26 /* Triangle.swift */; };
 		81CF318024FC1C1D00FE2F26 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */; };
+		81D89D6E24FC490D00E4E2F6 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 81D89D6D24FC490D00E4E2F6 /* Introspect */; };
+		81D89D7024FC51F800E4E2F6 /* ScrollToBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D89D6F24FC51F800E4E2F6 /* ScrollToBottom.swift */; };
+		81D89D7224FC593900E4E2F6 /* Binding++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D89D7124FC593900E4E2F6 /* Binding++.swift */; };
 		B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016224F0C31C0052E7CD /* AppDelegate.swift */; };
 		B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016424F0C31C0052E7CD /* SceneDelegate.swift */; };
 		B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B221016624F0C31C0052E7CD /* todus.xcdatamodeld */; };
@@ -48,7 +43,6 @@
 		B221019324F0D0D70052E7CD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019224F0D0D70052E7CD /* BottomView.swift */; };
 		B221019524F0D21B0052E7CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019424F0D21B0052E7CD /* CellView.swift */; };
 		B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019624F0D2A10052E7CD /* ContentMessageView.swift */; };
-		B24C34FA24FC2B8A00072F73 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24C34F924FC2B8A00072F73 /* CustomScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,16 +60,10 @@
 		8122CB5624F955380008CD6D /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		8122CB5824F9565A0008CD6D /* KeyboardHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHost.swift; sourceTree = "<group>"; };
 		8122CB5A24F95A430008CD6D /* KeyboardAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAware.swift; sourceTree = "<group>"; };
-		8122CB6324F974700008CD6D /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
-		8122CB6524F9748E0008CD6D /* KeyboardHeightPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeightPublisher.swift; sourceTree = "<group>"; };
-		8122CB6724F974A50008CD6D /* UIResponder+Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Current.swift"; sourceTree = "<group>"; };
-		8122CB6F24F9BC880008CD6D /* KeyboardAvoider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoider.swift; sourceTree = "<group>"; };
-		8122CB7124F9BCA60008CD6D /* KeyboardAvoiderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAvoiderModifier.swift; sourceTree = "<group>"; };
-		8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
-		8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder_Extension.swift; sourceTree = "<group>"; };
-		8122CB7724F9CDA20008CD6D /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		81CF317D24FC129D00FE2F26 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		81D89D6F24FC51F800E4E2F6 /* ScrollToBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToBottom.swift; sourceTree = "<group>"; };
+		81D89D7124FC593900E4E2F6 /* Binding++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding++.swift"; sourceTree = "<group>"; };
 		B221015F24F0C31C0052E7CD /* todus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B221016224F0C31C0052E7CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B221016424F0C31C0052E7CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +83,6 @@
 		B221019224F0D0D70052E7CD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		B221019424F0D21B0052E7CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B221019624F0D2A10052E7CD /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
-		B24C34F924FC2B8A00072F73 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D89D6E24FC490D00E4E2F6 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,40 +108,17 @@
 		8122CB4124F885110008CD6D /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				8122CB6E24F9BC590008CD6D /* MyKeyboardAvoider */,
-				8122CB5E24F968D00008CD6D /* For Keyboard */,
 				8122CB4224F8852D0008CD6D /* ContactChatCell.swift */,
 				8122CB4424F885880008CD6D /* InitialLettersView.swift */,
 				8122CB4624F885BC0008CD6D /* CounterNotifications.swift */,
 				8122CB5624F955380008CD6D /* MultilineTextField.swift */,
 				8122CB5824F9565A0008CD6D /* KeyboardHost.swift */,
 				8122CB5A24F95A430008CD6D /* KeyboardAware.swift */,
-				8122CB7724F9CDA20008CD6D /* CustomTextView.swift */,
 				81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */,
-				B24C34F924FC2B8A00072F73 /* CustomScrollView.swift */,
+				81D89D6F24FC51F800E4E2F6 /* ScrollToBottom.swift */,
+				81D89D7124FC593900E4E2F6 /* Binding++.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		8122CB5E24F968D00008CD6D /* For Keyboard */ = {
-			isa = PBXGroup;
-			children = (
-				8122CB6324F974700008CD6D /* KeyboardAdaptive.swift */,
-				8122CB6524F9748E0008CD6D /* KeyboardHeightPublisher.swift */,
-				8122CB6724F974A50008CD6D /* UIResponder+Current.swift */,
-			);
-			path = "For Keyboard";
-			sourceTree = "<group>";
-		};
-		8122CB6E24F9BC590008CD6D /* MyKeyboardAvoider */ = {
-			isa = PBXGroup;
-			children = (
-				8122CB6F24F9BC880008CD6D /* KeyboardAvoider.swift */,
-				8122CB7124F9BCA60008CD6D /* KeyboardAvoiderModifier.swift */,
-				8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */,
-				8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */,
-			);
-			path = MyKeyboardAvoider;
 			sourceTree = "<group>";
 		};
 		B221015624F0C31C0052E7CD = {
@@ -304,6 +269,7 @@
 			);
 			name = todus;
 			packageProductDependencies = (
+				81D89D6D24FC490D00E4E2F6 /* Introspect */,
 			);
 			productName = todus;
 			productReference = B221015F24F0C31C0052E7CD /* todus.app */;
@@ -334,6 +300,7 @@
 			);
 			mainGroup = B221015624F0C31C0052E7CD;
 			packageReferences = (
+				81D89D6C24FC490D00E4E2F6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = B221016024F0C31C0052E7CD /* Products */;
 			projectDirPath = "";
@@ -364,7 +331,6 @@
 			files = (
 				B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */,
 				B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */,
-				8122CB7824F9CDA20008CD6D /* CustomTextView.swift in Sources */,
 				81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */,
 				B221017C24F0C41D0052E7CD /* Home.swift in Sources */,
 				8122CB4524F885880008CD6D /* InitialLettersView.swift in Sources */,
@@ -375,12 +341,9 @@
 				B221018424F0C5270052E7CD /* Settings.swift in Sources */,
 				B221019124F0D01A0052E7CD /* CenterView.swift in Sources */,
 				8122CB4724F885BC0008CD6D /* CounterNotifications.swift in Sources */,
-				8122CB7024F9BC880008CD6D /* KeyboardAvoider.swift in Sources */,
 				B221018F24F0CE3B0052E7CD /* TopView.swift in Sources */,
 				8122CB4B24F93DC30008CD6D /* MockMessage.swift in Sources */,
 				8122CB5124F943B50008CD6D /* DataSource.swift in Sources */,
-				B24C34FA24FC2B8A00072F73 /* CustomScrollView.swift in Sources */,
-				8122CB6424F974700008CD6D /* KeyboardAdaptive.swift in Sources */,
 				8122CB4D24F9416C0008CD6D /* MessageView.swift in Sources */,
 				8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */,
 				8122CB5524F94A1E0008CD6D /* InputMessageBar.swift in Sources */,
@@ -388,18 +351,15 @@
 				B221019524F0D21B0052E7CD /* CellView.swift in Sources */,
 				8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */,
 				B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */,
-				8122CB6624F9748E0008CD6D /* KeyboardHeightPublisher.swift in Sources */,
-				8122CB6824F974A50008CD6D /* UIResponder+Current.swift in Sources */,
-				8122CB7424F9BCBF0008CD6D /* KeyboardHandler.swift in Sources */,
-				8122CB7224F9BCA60008CD6D /* KeyboardAvoiderModifier.swift in Sources */,
 				8122CB4924F93D9D0008CD6D /* MockUser.swift in Sources */,
 				B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */,
 				8122CB4324F8852D0008CD6D /* ContactChatCell.swift in Sources */,
 				8122CB5924F9565A0008CD6D /* KeyboardHost.swift in Sources */,
 				8122CB4024F881890008CD6D /* TabbarMainView.swift in Sources */,
+				81D89D7224FC593900E4E2F6 /* Binding++.swift in Sources */,
 				B221018224F0C4FF0052E7CD /* Groups.swift in Sources */,
 				B221018B24F0CC9B0052E7CD /* Chats.swift in Sources */,
-				8122CB7624F9BCEF0008CD6D /* UIResponder_Extension.swift in Sources */,
+				81D89D7024FC51F800E4E2F6 /* ScrollToBottom.swift in Sources */,
 				81CF318024FC1C1D00FE2F26 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +554,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81D89D6C24FC490D00E4E2F6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81D89D6D24FC490D00E4E2F6 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81D89D6C24FC490D00E4E2F6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B221016624F0C31C0052E7CD /* todus.xcdatamodeld */ = {

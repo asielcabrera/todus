@@ -14,6 +14,9 @@ struct DataSource {
     static var mockmessages = [
         MockMessage(content: "Hola", mockuser: DataSource.mockusers[0]),
         MockMessage(content: "Que tal, todo bien ?", mockuser: DataSource.mockusers[1]),
-        MockMessage(content: "Si, todo excelente 😘! Cuentame algo mas?", mockuser: DataSource.mockusers[0])
+        MockMessage(content: "Si, todo excelente 😘! Cuentame algo mas?", mockuser: DataSource.mockusers[0]),
+        MockMessage(content: "Probemos el scrollview a ver que tal y como se ve con mensajes largos", mockuser: DataSource.mockusers[1]),
+        MockMessage(content: "intentemos de nuevo con otro mensaje al final de todo esto", mockuser: DataSource.mockusers[1]),
+        MockMessage(content: "Ehhh ? me voy pa Wasasa 😋", mockuser: DataSource.mockusers[0]),
     ]
 }

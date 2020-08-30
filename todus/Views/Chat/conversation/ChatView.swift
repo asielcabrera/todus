@@ -9,39 +9,52 @@
 import SwiftUI
 import Combine
 import UIKit
+import Introspect
 
 struct ChatView: View {
     @State var typingMessage: String = ""
     @EnvironmentObject var chatHelper: ChatHelper
+    @State var isActiveKeyboard = false
+    @State var tableView : UITableView? = nil
     
     init() {
         UITableView.appearance().separatorStyle = .none
         UITableView.appearance().tableFooterView = UIView()
         //  dismiss keyboard when gesture down
         UIScrollView.appearance().keyboardDismissMode = .interactive
-        
+        //        UITableView.appearance()
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                CustomScrollView(scrollToEnd: true) {
-                    ForEach(self.chatHelper.realTimeMessages, id: \.self) { msg in
-                        MessageView(currentMessage: msg)
-                    }.padding(.vertical, 15)
+                
+                List(chatHelper.realTimeMessages, id: \.self) { msg in
+                    MessageView(currentMessage: msg)
+                }.introspectTableView(customize: { (tableview) in
                     
-                }.onTapGesture {
-                    self.endEditing(true)
+                    if self.isActiveKeyboard {
+                        self.tableView = tableview
+                    }
+                    self.ScrollToBottom(tableview: tableview)
+                })
+                    
+                    
+                    .onTapGesture {
+                        self.endEditing(true)
                 }
-            
-                    InputMessageBar(typingMessage: $typingMessage).environmentObject(chatHelper)
-//                .avoidKeyboard()
+                
+                InputMessageBar(typingMessage: $typingMessage).environmentObject(chatHelper)
                 
             }
-//            .keyboardAdaptive()
-            .keyboardAware()
-            .navigationBarTitle(Text(DataSource.mockusers[0].name), displayMode: .inline)
-//            .edgesIgnoringSafeArea(.bottom)
+            .keyboardAware(isActive: $isActiveKeyboard.didSet(execute: { (response) in
+                if response{
+                    if self.tableView != nil {
+                        self.ScrollToBottom(tableview: self.tableView!)
+                    }
+                }
+            }))
+                .navigationBarTitle(Text(DataSource.mockusers[0].name), displayMode: .inline)
         }
     }
     
