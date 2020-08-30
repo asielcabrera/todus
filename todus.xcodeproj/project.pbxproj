@@ -29,6 +29,7 @@
 		8122CB7424F9BCBF0008CD6D /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */; };
 		8122CB7624F9BCEF0008CD6D /* UIResponder_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */; };
 		8122CB7824F9CDA20008CD6D /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB7724F9CDA20008CD6D /* CustomTextView.swift */; };
+		81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF317D24FC129D00FE2F26 /* Triangle.swift */; };
 		B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016224F0C31C0052E7CD /* AppDelegate.swift */; };
 		B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221016424F0C31C0052E7CD /* SceneDelegate.swift */; };
 		B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B221016624F0C31C0052E7CD /* todus.xcdatamodeld */; };
@@ -71,6 +72,7 @@
 		8122CB7324F9BCBF0008CD6D /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		8122CB7524F9BCEF0008CD6D /* UIResponder_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder_Extension.swift; sourceTree = "<group>"; };
 		8122CB7724F9CDA20008CD6D /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		81CF317D24FC129D00FE2F26 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		B221015F24F0C31C0052E7CD /* todus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B221016224F0C31C0052E7CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B221016424F0C31C0052E7CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				B221018624F0C5B50052E7CD /* BorderCircleShape.swift */,
+				81CF317D24FC129D00FE2F26 /* Triangle.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */,
 				B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */,
 				8122CB7824F9CDA20008CD6D /* CustomTextView.swift in Sources */,
+				81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */,
 				B221017C24F0C41D0052E7CD /* Home.swift in Sources */,
 				8122CB4524F885880008CD6D /* InitialLettersView.swift in Sources */,
 				8122CB5324F9458F0008CD6D /* ChatView.swift in Sources */,
