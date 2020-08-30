@@ -40,7 +40,7 @@ struct ChatView: View {
 //            .keyboardAdaptive()
             .keyboardAware()
             .navigationBarTitle(Text(DataSource.mockusers[0].name), displayMode: .inline)
-            .edgesIgnoringSafeArea(.bottom)
+//            .edgesIgnoringSafeArea(.bottom)
         }
     }
     
