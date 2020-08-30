@@ -40,7 +40,7 @@
 		B221017C24F0C41D0052E7CD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221017B24F0C41C0052E7CD /* Home.swift */; };
 		B221018224F0C4FF0052E7CD /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221018124F0C4FF0052E7CD /* Groups.swift */; };
 		B221018424F0C5270052E7CD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221018324F0C5270052E7CD /* Settings.swift */; };
-		B221018724F0C5B50052E7CD /* BorderCircleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221018624F0C5B50052E7CD /* BorderCircleShape.swift */; };
+		B221018724F0C5B50052E7CD /* CustumShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221018624F0C5B50052E7CD /* CustumShapes.swift */; };
 		B221018B24F0CC9B0052E7CD /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221018A24F0CC9B0052E7CD /* Chats.swift */; };
 		B221018F24F0CE3B0052E7CD /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221018E24F0CE3B0052E7CD /* TopView.swift */; };
 		B221019124F0D01A0052E7CD /* CenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019024F0D01A0052E7CD /* CenterView.swift */; };
@@ -85,7 +85,7 @@
 		B221017B24F0C41C0052E7CD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B221018124F0C4FF0052E7CD /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 		B221018324F0C5270052E7CD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		B221018624F0C5B50052E7CD /* BorderCircleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderCircleShape.swift; sourceTree = "<group>"; };
+		B221018624F0C5B50052E7CD /* CustumShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumShapes.swift; sourceTree = "<group>"; };
 		B221018A24F0CC9B0052E7CD /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
 		B221018E24F0CE3B0052E7CD /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		B221019024F0D01A0052E7CD /* CenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterView.swift; sourceTree = "<group>"; };
@@ -364,7 +364,7 @@
 				8122CB4524F885880008CD6D /* InitialLettersView.swift in Sources */,
 				8122CB5324F9458F0008CD6D /* ChatView.swift in Sources */,
 				B221019324F0D0D70052E7CD /* BottomView.swift in Sources */,
-				B221018724F0C5B50052E7CD /* BorderCircleShape.swift in Sources */,
+				B221018724F0C5B50052E7CD /* CustumShapes.swift in Sources */,
 				B221016A24F0C31C0052E7CD /* ContentView.swift in Sources */,
 				B221018424F0C5270052E7CD /* Settings.swift in Sources */,
 				B221019124F0D01A0052E7CD /* CenterView.swift in Sources */,

@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentMessageView: View {
     var contentMessage: String
     var isCurrentUser: Bool
+
     
     var isDoubleMarcket = true
     
@@ -54,3 +55,5 @@ struct ContentMessageView_Previews: PreviewProvider {
 }
 
 
+    
+    

@@ -23,7 +23,7 @@ struct InputMessageBar: View {
             Button(action: {
                 
             }) {
-                Image(systemName: "paperclip").font(.system(size: 25))
+                Image(systemName: "paperclip").font(.system(size: 25)).foregroundColor(Color("primary"))
             }
             
             MultilineTextField("Mensaje", text: $typingMessage)
@@ -39,6 +39,7 @@ struct InputMessageBar: View {
                 }) {
                     Image(systemName: "mic").resizable().frame(width: !typingMessage.isEmpty ? 0 : 20, height: !typingMessage.isEmpty ? 0 : 30, alignment: .center)
                     .scaledToFit()
+                    .foregroundColor(Color("primary"))
                 }
 
             Button(action: sendMessage) {
@@ -47,7 +48,7 @@ struct InputMessageBar: View {
                     .frame(width: typingMessage.isEmpty ? 0 : 16, height: typingMessage.isEmpty ? 0 : 18, alignment: .center)
                     .foregroundColor(.white)
                     .padding(.horizontal, 2)
-                    .background(Circle().frame(width: typingMessage.isEmpty ? 0 : 35, height: typingMessage.isEmpty ? 0 : 35, alignment: .center))
+                    .background(Circle().frame(width: typingMessage.isEmpty ? 0 : 35, height: typingMessage.isEmpty ? 0 : 35, alignment: .center).foregroundColor(Color("primary")))
             }
 
             }
