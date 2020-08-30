@@ -14,6 +14,6 @@ struct DataSource {
     static var mockmessages = [
         MockMessage(content: "Hola", mockuser: DataSource.mockusers[0]),
         MockMessage(content: "Que tal, todo bien ?", mockuser: DataSource.mockusers[1]),
-        MockMessage(content: "Si, todo excelente 😘!", mockuser: DataSource.mockusers[0])
+        MockMessage(content: "Si, todo excelente 😘! Cuentame algo mas?", mockuser: DataSource.mockusers[0])
     ]
 }
