@@ -23,13 +23,13 @@ struct ContentMessageView: View {
             //Date and CheckMars
             HStack{
                 Text("9:01 PM")
-                Image(systemName: "checkmark").background(Color.blue)
+                Image(systemName: "checkmark").background(isCurrentUser ? Color.primaryBubbleColor : Color.secondaryBubbleColor)
                 
                 .overlay(
                 Image(systemName: "checkmark").offset(x: -3, y: 0)
                     .background(
                         Triangle()
-                            .fill(Color.blue)
+                            .fill(isCurrentUser ? Color.primaryBubbleColor : Color.secondaryBubbleColor)
                         .frame(width: 10, height: 10, alignment: .center)
                         .rotationEffect(Angle(degrees: 180))
                         .offset(x: -4, y: 0)
@@ -41,16 +41,20 @@ struct ContentMessageView: View {
             
             
         }
-        .padding(10)
-        .foregroundColor(isCurrentUser ? Color.white : Color.black)
-        .background(isCurrentUser ? Color.blue : Color(UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)))
-        .cornerRadius(10)
+        .padding()
+        .background(isCurrentUser ? Color.primaryBubbleColor : Color.secondaryBubbleColor)
+        .clipShape(CustomChatCorner(isCurrentUser: self.isCurrentUser))
+        .foregroundColor(isCurrentUser ? .white : .black)
+//        .padding(10)
+//        .foregroundColor(isCurrentUser ? Color.white : Color.black)
+//        .background(isCurrentUser ? Color.blue : Color(UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)))
+//        .cornerRadius(10)
     }
 }
 
 struct ContentMessageView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentMessageView(contentMessage: "Hello word", isCurrentUser: true)
+        ContentMessageView(contentMessage: "Hello word", isCurrentUser: false)
     }
 }
 
