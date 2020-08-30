@@ -25,14 +25,16 @@ struct ChatView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
-                List(chatHelper.realTimeMessages, id: \.self) { msg in
-                    MessageView(currentMessage: msg)
-                }.onTapGesture {
-                    self.endEditing(true)
+                CustomScrollView(scrollToEnd: true) {
+                    ForEach(self.chatHelper.realTimeMessages, id: \.self) { msg in
+                     MessageView(currentMessage: msg)
+                    
+                    }
+                    .onTapGesture {
+                        self.endEditing(true)
+                    }
                 }
-                
-                
+            
                     InputMessageBar(typingMessage: $typingMessage).environmentObject(chatHelper)
 //                .avoidKeyboard()
                 
@@ -53,3 +55,4 @@ struct ChatView_Previews: PreviewProvider {
         ChatView()
     }
 }
+

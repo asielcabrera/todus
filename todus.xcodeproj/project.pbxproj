@@ -48,6 +48,7 @@
 		B221019324F0D0D70052E7CD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019224F0D0D70052E7CD /* BottomView.swift */; };
 		B221019524F0D21B0052E7CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019424F0D21B0052E7CD /* CellView.swift */; };
 		B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019624F0D2A10052E7CD /* ContentMessageView.swift */; };
+		B24C34FA24FC2B8A00072F73 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24C34F924FC2B8A00072F73 /* CustomScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		B221019224F0D0D70052E7CD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		B221019424F0D21B0052E7CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B221019624F0D2A10052E7CD /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		B24C34F924FC2B8A00072F73 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				8122CB5A24F95A430008CD6D /* KeyboardAware.swift */,
 				8122CB7724F9CDA20008CD6D /* CustomTextView.swift */,
 				81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */,
+				B24C34F924FC2B8A00072F73 /* CustomScrollView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				B221018F24F0CE3B0052E7CD /* TopView.swift in Sources */,
 				8122CB4B24F93DC30008CD6D /* MockMessage.swift in Sources */,
 				8122CB5124F943B50008CD6D /* DataSource.swift in Sources */,
+				B24C34FA24FC2B8A00072F73 /* CustomScrollView.swift in Sources */,
 				8122CB6424F974700008CD6D /* KeyboardAdaptive.swift in Sources */,
 				8122CB4D24F9416C0008CD6D /* MessageView.swift in Sources */,
 				8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */,
