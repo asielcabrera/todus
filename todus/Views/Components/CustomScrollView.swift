@@ -31,9 +31,9 @@ struct CustomScrollView<Content>: View where Content: View {
     }
 
     private func vertical(geometry: GeometryProxy) -> some View {
-        VStack {
-            content()
-        }
+        VStack(alignment: .leading, spacing: 10) {
+            content().padding(.horizontal, 10)
+            }
         .modifier(ViewHeightKey())
         .onPreferenceChange(ViewHeightKey.self) {
             self.updateHeight(with: $0, outerHeight: geometry.size.height)
