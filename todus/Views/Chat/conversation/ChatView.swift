@@ -36,7 +36,7 @@ struct ChatView: View {
                     InputMessageBar(typingMessage: $typingMessage).environmentObject(chatHelper)
 //                .avoidKeyboard()
                 
-            }
+            }.padding(.vertical, 15)
 //            .keyboardAdaptive()
             .keyboardAware()
             .navigationBarTitle(Text(DataSource.mockusers[0].name), displayMode: .inline)
