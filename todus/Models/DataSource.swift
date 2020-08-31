@@ -7,10 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
 
 ///Sample data for testing 
 struct DataSource {
     static let mockusers = [MockUser(name: "Rosse🍒", avatar: "", isCurrentUser: false), MockUser(name: "Me😎", avatar: "", isCurrentUser: true)]
+    static let you = DataSource.mockusers[0]
+    static let me = DataSource.mockusers[1]
     static var mockmessages = [
         MockMessage(id: UUID().uuidString, kind: .text("Hola"), mockuser: DataSource.mockusers[0], createAt: Date()),
         MockMessage(id: UUID().uuidString, kind: .text("Que tal, todo bien ?"), mockuser: DataSource.mockusers[1], createAt: Date()),
@@ -18,5 +22,25 @@ struct DataSource {
         MockMessage(id: UUID().uuidString, kind: .text("Probemos el scrollview a ver que tal y como se ve con mensajes largos"), mockuser: DataSource.mockusers[1], createAt: Date()),
         MockMessage(id: UUID().uuidString, kind: .text("intentemos de nuevo con otro mensaje al final de todo esto"), mockuser: DataSource.mockusers[1], createAt: Date()),
         MockMessage(id: UUID().uuidString, kind: .text("Ehhh ? me voy pa Wasasa 😋"), mockuser: DataSource.mockusers[0], createAt: Date()),
+        MockMessage(id: UUID().uuidString, kind: .photo(getMediaItem()), mockuser: DataSource.you, createAt: Date())
     ]
+    
+    static private func getMediaItem() -> MediaItem {
+        let imgmedia = MediaItemRow(url: URL(string: "url"), image: #imageLiteral(resourceName: "p1.png"), placeholderImage: #imageLiteral(resourceName: "p1.png"), size: CGSize(width: 250, height: 250))
+        
+        return imgmedia
+    }
 }
+
+struct MediaItemRow : MediaItem{
+    var url: URL?
+    
+    var image: UIImage?
+    
+    var placeholderImage: UIImage
+    
+    var size: CGSize
+    
+    
+}
+
