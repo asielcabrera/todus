@@ -16,7 +16,7 @@ struct MessageView: View {
             if currentMessage.mockuser.isCurrentUser {
                 Spacer()
             }
-            ContentMessageView(contentMessage: currentMessage.content,
+            ContentMessageView(message: currentMessage,
                                isCurrentUser: currentMessage.mockuser.isCurrentUser)
         }
     }
@@ -24,6 +24,6 @@ struct MessageView: View {
 
 struct MessageView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageView(currentMessage: MockMessage(content: "Hola mundo", mockuser: DataSource.mockusers[0]))
+        MessageView(currentMessage: MockMessage(id: UUID().uuidString, kind: .text("Hola mundo"), mockuser: DataSource.mockusers[0], createAt: Date()))
     }
 }

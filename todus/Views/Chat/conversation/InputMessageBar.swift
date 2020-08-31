@@ -21,7 +21,7 @@ struct InputMessageBar: View {
         Divider()
             HStack(alignment: .center , spacing: 15) {
             Button(action: {
-                
+                print("pressed papperclip")
             }) {
                 Image(systemName: "paperclip").font(.system(size: 25))
             }
@@ -63,7 +63,7 @@ struct InputMessageBar: View {
     }
     
     func sendMessage() {
-        chatHelper.sendMessage(MockMessage(content: typingMessage, mockuser: DataSource.mockusers[1]))
+        chatHelper.sendMessage(MockMessage(id: UUID().uuidString, kind: .text(typingMessage), mockuser: DataSource.mockusers[1], createAt: Date()))
         typingMessage = ""
     }
 }

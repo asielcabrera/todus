@@ -34,7 +34,7 @@ public class KeyboardInfo: ObservableObject {
                 notification.name == UIApplication.keyboardDidHideNotification {
                 self.height = 0
             } else{
-                print("k -> \(notification.name)")
+//                print("k -> \(notification.name)")
                 self.height = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect)?.height ?? 0
             }
             

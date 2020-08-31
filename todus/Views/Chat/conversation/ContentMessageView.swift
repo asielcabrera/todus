@@ -9,37 +9,56 @@
 import SwiftUI
 
 struct ContentMessageView: View {
-    var contentMessage: String
-    var isCurrentUser: Bool
-
+    @State var message: MockMessage
+    @State var isCurrentUser: Bool
+    @State var date = Date()
     
     var isDoubleMarcket = true
     
-    var body: some View {
-        HStack(alignment: .bottom){
-        Text(contentMessage)
-            .multilineTextAlignment(.leading)
-            
-            //Date and CheckMars
-            DateCheckMarkView(isCurrentUser: isCurrentUser, date: Date())
-            
-            
+    func messagecell() -> some View{
+        
+        switch message.kind {
+        case .text(let text):
+            return TextCell(text: text, date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
+        case.photo( _):
+            return TextCell(text: "Not supported yet", date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
+//        default:
+//            return TextCell(text: "unknow message type", date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
         }
+
+    }
+    
+    var body: some View {
+        messagecell()
         .padding()
         .background(isCurrentUser ? Color.primaryBubbleColor : Color.secondaryBubbleColor)
         .clipShape(CustomChatCorner(isCurrentUser: self.isCurrentUser))
         .foregroundColor(isCurrentUser ? .white : .black)
         .frame(maxWidth: 300, alignment: isCurrentUser ? .trailing : .leading)
-//        .padding(10)
-//        .foregroundColor(isCurrentUser ? Color.white : Color.black)
-//        .background(isCurrentUser ? Color.blue : Color(UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)))
-//        .cornerRadius(10)
+    }
+}
+
+struct TextCell : View {
+    var text : String
+    var date : Date
+    var isCurrentUser: Bool
+    
+    var body: some View{
+        HStack(alignment: .bottom){
+            Text(text)
+            .multilineTextAlignment(.leading)
+            
+            //Date and CheckMars
+            DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
+        }
+        
     }
 }
 
 struct ContentMessageView_Previews: PreviewProvider {
+    @State static var sampleMessage = DataSource.mockmessages[2]
     static var previews: some View {
-        ContentMessageView(contentMessage: "Wilder esta loco por ir a casa", isCurrentUser: false)
+        ContentMessageView(message: sampleMessage, isCurrentUser: sampleMessage.mockuser.isCurrentUser)
     }
 }
 
@@ -52,7 +71,7 @@ struct DateCheckMarkView: View {
     @State var date : Date
     var body: some View {
         HStack{
-            Text("19:81 PM")
+            Text(DateHelper.getDateWith(timeInterval: Int64(date.timeIntervalSince1970)))
             Image(systemName: "checkmark").background(isCurrentUser ? Color.primaryBubbleColor : Color.secondaryBubbleColor)
                 
                 .overlay(

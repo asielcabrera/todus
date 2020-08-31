@@ -21,6 +21,9 @@
 		81C0B08124FD544200A14BB0 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B07E24FD544200A14BB0 /* MockUser.swift */; };
 		81C0B08224FD544200A14BB0 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B07F24FD544200A14BB0 /* MockMessage.swift */; };
 		81C0B08324FD544200A14BB0 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B08024FD544200A14BB0 /* DataSource.swift */; };
+		81C0B08624FD5E7800A14BB0 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B08524FD5E7800A14BB0 /* DateHelper.swift */; };
+		81C0B08824FD631E00A14BB0 /* MessageKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B08724FD631E00A14BB0 /* MessageKind.swift */; };
+		81C0B08B24FD64B100A14BB0 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B08A24FD64B100A14BB0 /* MediaItem.swift */; };
 		81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF317D24FC129D00FE2F26 /* Triangle.swift */; };
 		81CF318024FC1C1D00FE2F26 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */; };
 		81D89D6E24FC490D00E4E2F6 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 81D89D6D24FC490D00E4E2F6 /* Introspect */; };
@@ -60,6 +63,9 @@
 		81C0B07E24FD544200A14BB0 /* MockUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
 		81C0B07F24FD544200A14BB0 /* MockMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
 		81C0B08024FD544200A14BB0 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		81C0B08524FD5E7800A14BB0 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		81C0B08724FD631E00A14BB0 /* MessageKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageKind.swift; sourceTree = "<group>"; };
+		81C0B08A24FD64B100A14BB0 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		81CF317D24FC129D00FE2F26 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		81D89D6F24FC51F800E4E2F6 /* ScrollToBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToBottom.swift; sourceTree = "<group>"; };
@@ -125,11 +131,29 @@
 		81C0B07D24FD540700A14BB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				81C0B08924FD649C00A14BB0 /* MessageKindTypes */,
 				81C0B08024FD544200A14BB0 /* DataSource.swift */,
 				81C0B07F24FD544200A14BB0 /* MockMessage.swift */,
 				81C0B07E24FD544200A14BB0 /* MockUser.swift */,
+				81C0B08724FD631E00A14BB0 /* MessageKind.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		81C0B08424FD5E6900A14BB0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				81C0B08524FD5E7800A14BB0 /* DateHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		81C0B08924FD649C00A14BB0 /* MessageKindTypes */ = {
+			isa = PBXGroup;
+			children = (
+				81C0B08A24FD64B100A14BB0 /* MediaItem.swift */,
+			);
+			path = MessageKindTypes;
 			sourceTree = "<group>";
 		};
 		B221015624F0C31C0052E7CD = {
@@ -151,6 +175,7 @@
 		B221016124F0C31C0052E7CD /* todus */ = {
 			isa = PBXGroup;
 			children = (
+				81C0B08424FD5E6900A14BB0 /* Util */,
 				8122CB4124F885110008CD6D /* Components */,
 				81C0B07D24FD540700A14BB0 /* Models */,
 				B221017A24F0C34E0052E7CD /* Views */,
@@ -330,14 +355,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */,
+				81C0B08824FD631E00A14BB0 /* MessageKind.swift in Sources */,
 				B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */,
 				81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */,
 				81C0B08224FD544200A14BB0 /* MockMessage.swift in Sources */,
 				B221017C24F0C41D0052E7CD /* Home.swift in Sources */,
 				8122CB4524F885880008CD6D /* InitialLettersView.swift in Sources */,
+				81C0B08B24FD64B100A14BB0 /* MediaItem.swift in Sources */,
 				8122CB5324F9458F0008CD6D /* ChatView.swift in Sources */,
 				B221019324F0D0D70052E7CD /* BottomView.swift in Sources */,
 				B221018724F0C5B50052E7CD /* CustumShapes.swift in Sources */,
+				81C0B08624FD5E7800A14BB0 /* DateHelper.swift in Sources */,
 				B221016A24F0C31C0052E7CD /* ContentView.swift in Sources */,
 				B221018424F0C5270052E7CD /* Settings.swift in Sources */,
 				81C0B08124FD544200A14BB0 /* MockUser.swift in Sources */,

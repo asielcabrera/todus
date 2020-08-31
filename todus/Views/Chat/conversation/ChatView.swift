@@ -29,7 +29,7 @@ struct ChatView: View {
         NavigationView {
             VStack {
                 
-                List(chatHelper.realTimeMessages, id: \.self) { msg in
+                List(chatHelper.realTimeMessages) { msg in
                     MessageView(currentMessage: msg)
                 }.introspectTableView(customize: { (tableview) in
                     
