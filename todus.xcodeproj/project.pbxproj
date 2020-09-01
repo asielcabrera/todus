@@ -177,7 +177,6 @@
 		B221015624F0C31C0052E7CD = {
 			isa = PBXGroup;
 			children = (
-				81C0B09324FE8EAE00A14BB0 /* .gitignore */,
 				B221016124F0C31C0052E7CD /* todus */,
 				B221016024F0C31C0052E7CD /* Products */,
 			);
@@ -194,6 +193,7 @@
 		B221016124F0C31C0052E7CD /* todus */ = {
 			isa = PBXGroup;
 			children = (
+				81C0B09324FE8EAE00A14BB0 /* .gitignore */,
 				81C0B08424FD5E6900A14BB0 /* Util */,
 				8122CB4124F885110008CD6D /* Components */,
 				81C0B07D24FD540700A14BB0 /* Models */,
