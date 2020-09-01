@@ -26,7 +26,7 @@ struct ChatView: View {
     }
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 
                 List(chatHelper.realTimeMessages) { msg in
@@ -55,7 +55,7 @@ struct ChatView: View {
                 }
             }))
                 .navigationBarTitle(Text(DataSource.mockusers[0].name), displayMode: .inline)
-        }
+//        }
     }
     
     
