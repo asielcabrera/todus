@@ -19,9 +19,10 @@ struct ContentMessageView: View {
         
         switch message.kind {
         case .text(let text):
-            return TextCell(text: text, date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
-        case.photo( _):
-            return TextCell(text: "Not supported yet", date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
+            return TextCell(text: text, date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser).embedInAnyView()
+        case.photo(let mediaItem):
+            return ImageCell(image: mediaItem.image!, date: message.createAt, size: mediaItem.size, isCurrentUser: message.mockuser.isCurrentUser).embedInAnyView()
+//            return TextCell(text: "Not supported yet", date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
 //        default:
 //            return TextCell(text: "unknow message type", date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
         }
@@ -38,22 +39,6 @@ struct ContentMessageView: View {
     }
 }
 
-struct TextCell : View {
-    var text : String
-    var date : Date
-    var isCurrentUser: Bool
-    
-    var body: some View{
-        HStack(alignment: .bottom){
-            Text(text)
-            .multilineTextAlignment(.leading)
-            
-            //Date and CheckMars
-            DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
-        }
-        
-    }
-}
 
 struct ContentMessageView_Previews: PreviewProvider {
     @State static var sampleMessage = DataSource.mockmessages[2]

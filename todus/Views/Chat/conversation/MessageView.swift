@@ -19,6 +19,7 @@ struct MessageView: View {
             ContentMessageView(message: currentMessage,
                                isCurrentUser: currentMessage.mockuser.isCurrentUser)
         }
+        
     }
 }
 
