@@ -28,6 +28,8 @@ struct DataSource {
                             MockUser(name: "Lisa", avatar: "p5", isCurrentUser: true),
                             MockUser(name: "Me😎", avatar: "", isCurrentUser: true)
     ]
+    static let you = DataSource.mockusers[0]
+    static let me = DataSource.mockusers.last
     
     static var mockmessages = [
         MockMessage(id: UUID().uuidString, kind: .text("Hola"), mockuser: DataSource.mockusers[0], createAt: Date()),
