@@ -57,7 +57,7 @@ struct InputMessageBar: View {
             .frame(minHeight: CGFloat(50))
             .padding(3)
             .padding(.horizontal, 10)
-            .accentColor(.primaryBubbleColor)
+            .accentColor(.primaryTodusColor)
             
         }
     }

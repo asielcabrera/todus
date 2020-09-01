@@ -12,5 +12,6 @@ import SwiftUI
 extension Color {
     static let primaryBubbleColor = Color("primary")
     static let secondaryBubbleColor = Color("secondary")
+    static let primaryTodusColor = Color("TodusColor")
     
 }

@@ -22,7 +22,7 @@ struct TextCell : View {
             DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
         }
         .padding()
-        .background(isCurrentUser ? Color.primaryBubbleColor : Color.secondaryBubbleColor)
+        .background(isCurrentUser ? Color.primaryTodusColor : Color.secondaryBubbleColor)
         .clipShape(CustomChatCorner(isCurrentUser: self.isCurrentUser))
         .foregroundColor(isCurrentUser ? .white : .black)
         .frame(maxWidth: 300, alignment: isCurrentUser ? .trailing : .leading)
