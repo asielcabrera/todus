@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CustomScrollView.vertical(geometry:):CustomScrollView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "reversed">
+            </PersistentString>
+            <PersistentString
+               value = "geometry.size.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
