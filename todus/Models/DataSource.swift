@@ -42,7 +42,7 @@ struct DataSource {
     ]
     
     static private func getMediaItem() -> MediaItem {
-        let imgmedia = MediaItemRow(url: URL(string: "url"), image: #imageLiteral(resourceName: "img-msg5"), placeholderImage: #imageLiteral(resourceName: "img-msg3"), size: CGSize(width: 250, height: 250))
+        let imgmedia = MediaItemRow(url: URL(string: "url"), image: #imageLiteral(resourceName: "img-msg5"), placeholderImage: #imageLiteral(resourceName: "img-msg3"))
         
         return imgmedia
     }
@@ -55,7 +55,7 @@ struct MediaItemRow : MediaItem{
     
     var placeholderImage: UIImage
     
-    var size: CGSize
+    var size: CGSize = CGSize(width: 250, height: 250)
     
     
 }
