@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct CellView: View {
-    var data : Msg
+    var data : MockUser
     
     var body : some View {
         
@@ -37,12 +37,12 @@ struct CellView: View {
 //            }
 //        }.padding(.vertical, 7)
            
-        ContactChatCell(name: data.name, imgurl: "", lastMessage: data.msg, lastMDate: "9:51 pm", counterMessages: 5)
+        ContactChatCell(name: data.name, imgurl: data.avatar, lastMessage:"last mensajes send", lastMDate: "9:51 pm", counterMessages: 5)
     }
 }
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(data: data[0])
+        CellView(data: DataSource.mockusers[0])
     }
 }

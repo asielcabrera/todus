@@ -14,32 +14,32 @@ struct CenterView: View {
     
     var body : some View{
         
+        List(DataSource.mockusers){ user in
         
-            List(data){i in
-                
-                if i.id == 0{
-                    NavigationLink(destination: ContentMessageView(message: DataSource.mockmessages[0], isCurrentUser: false)) {
-                        CellView(data : i)
+            Group{
+                if user.id == DataSource.mockusers[0].id {
+                    NavigationLink(destination: ChatView()) {
+                        CellView(data : user)
                     }
-                    
+
                     .onAppear {
-                            
+
                         self.expand = true
                     }
                     .onDisappear {
-                        
+
                         self.expand = false
                     }
                 }
                 else{
-                   
+
                     NavigationLink(destination: ContentMessageView(message: DataSource.mockmessages[0], isCurrentUser: false)) {
-                        CellView(data : i)
+                        CellView(data : user)
                     }
-                        
+
                 }
-                
             }
+        }
             .padding(.top, 20)
             .background(Color.white)
             .clipShape(BorderCircleShape())

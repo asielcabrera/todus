@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct MockUser : Hashable{
+struct MockUser : Hashable, Identifiable {
+    
+    var id = UUID()
     var name: String
     var avatar: String
     var isCurrentUser: Bool = false

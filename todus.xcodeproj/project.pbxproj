@@ -46,6 +46,7 @@
 		B221019324F0D0D70052E7CD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019224F0D0D70052E7CD /* BottomView.swift */; };
 		B221019524F0D21B0052E7CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019424F0D21B0052E7CD /* CellView.swift */; };
 		B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019624F0D2A10052E7CD /* ContentMessageView.swift */; };
+		B249808724FDB33300BA5F74 /* DataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249808624FDB33300BA5F74 /* DataExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		B221019224F0D0D70052E7CD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		B221019424F0D21B0052E7CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B221019624F0D2A10052E7CD /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		B249808624FDB33300BA5F74 /* DataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				81C0B08524FD5E7800A14BB0 /* DateHelper.swift */,
+				B249808624FDB33300BA5F74 /* DataExample.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */,
 				81C0B08224FD544200A14BB0 /* MockMessage.swift in Sources */,
 				B221017C24F0C41D0052E7CD /* Home.swift in Sources */,
+				B249808724FDB33300BA5F74 /* DataExample.swift in Sources */,
 				8122CB4524F885880008CD6D /* InitialLettersView.swift in Sources */,
 				81C0B08B24FD64B100A14BB0 /* MediaItem.swift in Sources */,
 				8122CB5324F9458F0008CD6D /* ChatView.swift in Sources */,
