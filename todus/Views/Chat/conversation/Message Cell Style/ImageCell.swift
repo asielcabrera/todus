@@ -15,16 +15,27 @@ struct ImageCell: View {
     let isCurrentUser: Bool
     
     var body: some View {
-        HStack(alignment: .bottom){
-            Image(uiImage: image).resizable()
+        ZStack(alignment: .bottomTrailing){
+            Image(uiImage: image)
+                .resizable()
                 .frame(width: size.width, height: size.height, alignment: .center)
-                .overlay(
+//                .scaledToFill()
+            
                     DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
-                    .offset(x: 150, y: 150)
-                )
+                        .padding(3)
+                        .padding(.horizontal, 6)
+                        .background(Color.black.opacity(0.3))
+                        .cornerRadius(10)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 5)
             
             
         }
+        .background(isCurrentUser ? Color.primaryBubbleColor : Color.secondaryBubbleColor)
+            
+        .clipShape(CustomChatCorner(isCurrentUser: self.isCurrentUser))
+        .foregroundColor(.white)
+        .frame(maxWidth: 300, alignment: isCurrentUser ? .trailing : .leading)
     }
 }
 
