@@ -14,20 +14,32 @@ struct ImageCell: View {
     let size : CGSize
     let isCurrentUser: Bool
     
+    var width : CGFloat {
+        image.size.width
+    }
+    var height : CGFloat {
+        image.size.height
+        
+    }
+    var isLandscape: Bool {
+        size.width > size.height
+    }
+    
     var body: some View {
+        
         ZStack(alignment: .bottomTrailing){
             Image(uiImage: image)
                 .resizable()
-                .frame(width: size.width, height: size.height, alignment: .center)
-//                .scaledToFill()
+                .aspectRatio(width / height, contentMode: isLandscape ? .fit : .fill)
+                .frame(width: size.width, height: isLandscape ? nil :  size.height)
             
-                    DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
-                        .padding(3)
-                        .padding(.horizontal, 6)
-                        .background(Color.black.opacity(0.3))
-                        .cornerRadius(10)
-                        .padding(.vertical, 10)
-                        .padding(.horizontal, 5)
+            DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
+                .padding(3)
+                .padding(.horizontal, 6)
+                .background(Color.black.opacity(0.3))
+                .cornerRadius(10)
+                .padding(.vertical, 10)
+                .padding(.horizontal, 5)
             
             
         }
