@@ -13,32 +13,32 @@ struct Home: View {
     @State var expand = false
     var body : some View{
           NavigationView {
-        ZStack{
-            
-            VStack{
-                Color.white
-                Color("primary")
-            }
-            
-            VStack{
+            ZStack{
                 
-                ZStack{
-                  
-                        
-                    Chats(expand: self.$expand).opacity(self.index == 0 ? 1 : 0)
-                    
-                    Groups().opacity(self.index == 1 ? 1 : 0)
-                    
-                    Settings().opacity(self.index == 2 ? 1 : 0)
-                        
-                    
+                VStack{
+                    Color.white
+                    Color("primary")
                 }
                 
-                BottomView(index: self.$index)
-                
+                VStack{
+                    
+                    ZStack{
+                      
+                            
+                        Chats(expand: self.$expand).opacity(self.index == 0 ? 1 : 0)
+                        
+                        Groups().opacity(self.index == 1 ? 1 : 0)
+                        
+                        Settings().opacity(self.index == 2 ? 1 : 0)
+                            
+                        
+                    }
+                    
+                    BottomView(index: self.$index)
+                    
+                }
             }
-        }
-        .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }

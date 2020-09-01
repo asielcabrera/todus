@@ -12,9 +12,23 @@ import UIKit
 
 ///Sample data for testing 
 struct DataSource {
-    static let mockusers = [MockUser(name: "Rosse🍒", avatar: "", isCurrentUser: false), MockUser(name: "Me😎", avatar: "", isCurrentUser: true)]
-    static let you = DataSource.mockusers[0]
-    static let me = DataSource.mockusers[1]
+    static let mockusers = [
+                            MockUser(name: "Rosse🍒", avatar: "", isCurrentUser: false),
+                            MockUser(name: "Emily", avatar: "p1", isCurrentUser: true),
+                            MockUser(name: "Jonh", avatar: "p2", isCurrentUser: true),
+                            MockUser(name: "Catherine", avatar: "p3", isCurrentUser: true),
+                            MockUser(name: "Emma", avatar: "p4", isCurrentUser: true),
+                            MockUser(name: "Lina", avatar: "p5", isCurrentUser: true),
+                            MockUser(name: "Steve Jobs", avatar: "p6", isCurrentUser: true),
+                            MockUser(name: "Roy", avatar: "p7", isCurrentUser: true),
+                            MockUser(name: "Julia", avatar: "p1", isCurrentUser: true),
+                            MockUser(name: "Watson", avatar: "p2", isCurrentUser: true),
+                            MockUser(name: "Kavuya", avatar: "p3", isCurrentUser: true),
+                            MockUser(name: "Julie", avatar: "p4", isCurrentUser: true),
+                            MockUser(name: "Lisa", avatar: "p5", isCurrentUser: true),
+                            MockUser(name: "Me😎", avatar: "", isCurrentUser: true)
+    ]
+    
     static var mockmessages = [
         MockMessage(id: UUID().uuidString, kind: .text("Hola"), mockuser: DataSource.mockusers[0], createAt: Date()),
         MockMessage(id: UUID().uuidString, kind: .text("Que tal, todo bien ?"), mockuser: DataSource.mockusers[1], createAt: Date()),
