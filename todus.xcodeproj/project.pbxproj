@@ -18,6 +18,8 @@
 		8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5624F955380008CD6D /* MultilineTextField.swift */; };
 		8122CB5924F9565A0008CD6D /* KeyboardHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5824F9565A0008CD6D /* KeyboardHost.swift */; };
 		8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5A24F95A430008CD6D /* KeyboardAware.swift */; };
+		8183496224FEB1F3003DB14E /* ImageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183496024FEB1F2003DB14E /* ImageCoordinator.swift */; };
+		8183496324FEB1F3003DB14E /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183496124FEB1F3003DB14E /* CaptureImageView.swift */; };
 		81C0B08124FD544200A14BB0 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B07E24FD544200A14BB0 /* MockUser.swift */; };
 		81C0B08224FD544200A14BB0 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B07F24FD544200A14BB0 /* MockMessage.swift */; };
 		81C0B08324FD544200A14BB0 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B08024FD544200A14BB0 /* DataSource.swift */; };
@@ -63,6 +65,8 @@
 		8122CB5624F955380008CD6D /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		8122CB5824F9565A0008CD6D /* KeyboardHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHost.swift; sourceTree = "<group>"; };
 		8122CB5A24F95A430008CD6D /* KeyboardAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAware.swift; sourceTree = "<group>"; };
+		8183496024FEB1F2003DB14E /* ImageCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCoordinator.swift; sourceTree = "<group>"; };
+		8183496124FEB1F3003DB14E /* CaptureImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
 		81C0B07E24FD544200A14BB0 /* MockUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
 		81C0B07F24FD544200A14BB0 /* MockMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
 		81C0B08024FD544200A14BB0 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				B221018524F0C58E0052E7CD /* Shapes */,
 				8122CB4224F8852D0008CD6D /* ContactChatCell.swift */,
 				8122CB4424F885880008CD6D /* InitialLettersView.swift */,
+				8183496124FEB1F3003DB14E /* CaptureImageView.swift */,
+				8183496024FEB1F2003DB14E /* ImageCoordinator.swift */,
 				8122CB4624F885BC0008CD6D /* CounterNotifications.swift */,
 				8122CB5624F955380008CD6D /* MultilineTextField.swift */,
 				8122CB5824F9565A0008CD6D /* KeyboardHost.swift */,
@@ -390,8 +396,10 @@
 				B221019124F0D01A0052E7CD /* CenterView.swift in Sources */,
 				8122CB4724F885BC0008CD6D /* CounterNotifications.swift in Sources */,
 				B221018F24F0CE3B0052E7CD /* TopView.swift in Sources */,
+				8183496324FEB1F3003DB14E /* CaptureImageView.swift in Sources */,
 				8122CB4D24F9416C0008CD6D /* MessageView.swift in Sources */,
 				8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */,
+				8183496224FEB1F3003DB14E /* ImageCoordinator.swift in Sources */,
 				8122CB5524F94A1E0008CD6D /* InputMessageBar.swift in Sources */,
 				8122CB4F24F9435A0008CD6D /* ChatHelper.swift in Sources */,
 				81C0B08E24FDA51E00A14BB0 /* TextCell.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct InputMessageBar: View {
     @Binding var typingMessage: String
     @EnvironmentObject var chatHelper: ChatHelper
-    
+    @State var selectedImage : UIImage? = nil
     
     
     var body: some View {
