@@ -9,22 +9,47 @@
 import SwiftUI
 
 struct ImageCell: View {
-    let image : UIImage
+    
+    let item : MediaItemRow
+    
+//    let image : UIImage
     let date : Date
-    let size : CGSize
+//    let size : CGSize
     let isCurrentUser: Bool
     
+    var width : CGFloat {
+        item.image!.size.width
+    }
+    var height : CGFloat {
+        item.image!.size.height
+        
+    }
+    var isLandscape: Bool {
+        item.size.width > item.size.height
+    }
+    
     var body: some View {
-        HStack(alignment: .bottom){
-            Image(uiImage: image).resizable()
-                .frame(width: size.width, height: size.height, alignment: .center)
-                .overlay(
-                    DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
-                    .offset(x: 150, y: 150)
-                )
+        
+        ZStack(alignment: .bottomTrailing){
+            Image(uiImage: item.image!)
+                .resizable()
+                .aspectRatio(width / height, contentMode: isLandscape ? .fit : .fill)
+                .frame(width: isLandscape ? 300 : 250, height: isLandscape ? nil :  350)
+            
+            DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
+                .padding(3)
+                .padding(.horizontal, 6)
+                .background(Color.black.opacity(0.3))
+                .cornerRadius(10)
+                .padding(10)
             
             
         }
+        .background(isCurrentUser ? Color.primaryTodusColor : Color.secondaryBubbleColor)
+            
+        .clipShape(CustomChatCorner(isCurrentUser: self.isCurrentUser))
+        .foregroundColor(.white)
+        .frame(maxWidth: 300, alignment: isCurrentUser ? .trailing : .leading)
     }
 }
 

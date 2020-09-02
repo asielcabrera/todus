@@ -12,7 +12,13 @@ struct InputMessageBar: View {
     @Binding var typingMessage: String
     @EnvironmentObject var chatHelper: ChatHelper
     
+    @State var selectedImage : UIImage? = nil
+    @State var showCaptureImage = false
+    @State var isCameraSelected = false
     
+    @State var showActionSheet = false
+    
+    @State var messagetype : SenderMessageType = .text
     
     var body: some View {
         
@@ -21,7 +27,9 @@ struct InputMessageBar: View {
         Divider()
             HStack(alignment: .center , spacing: 15) {
             Button(action: {
-                print("pressed papperclip")
+                print("show action sheet")
+                self.showActionSheet.toggle()
+                
             }) {
                 Image(systemName: "paperclip").font(.system(size: 25))
             }
@@ -57,14 +65,66 @@ struct InputMessageBar: View {
             .frame(minHeight: CGFloat(50))
             .padding(3)
             .padding(.horizontal, 10)
-            .accentColor(.primaryBubbleColor)
+            .accentColor(.primaryTodusColor)
             
+        }
+        
+        .actionSheet(isPresented: $showActionSheet) {
+            ActionSheet(title: Text("Enviar ..."), buttons: [
+                .default(Text("Cámara"), action: {
+                    print("from Camera")
+                    self.showCaptureImage.toggle()
+                    self.isCameraSelected = true
+                }),
+                .default(Text("Foto"), action: {
+                    print("from galery")
+                    self.showCaptureImage.toggle()
+                    self.isCameraSelected = false
+                }),
+                .default(Text("Archivo"), action: {
+                    print("from file")
+                }),
+                .default(Text("Ubicación"), action: {
+                    print("from location map")
+                }),
+                .default(Text("Contacto"), action: {
+                    print("from contacts")
+                }),
+                .cancel(Text("Cancelar"))
+            ])
+        }
+        .sheet(isPresented: $showCaptureImage, onDismiss: {
+            if self.selectedImage != nil {
+                print("image was selected")
+                self.messagetype = .photo
+                self.sendMessage()
+            }
+        }) {
+            CaptureImageView(isShown: self.$showCaptureImage, image: self.$selectedImage, isCamera: self.$isCameraSelected)
         }
     }
     
     func sendMessage() {
-        chatHelper.sendMessage(MockMessage(id: UUID().uuidString, kind: .text(typingMessage), mockuser: DataSource.mockusers[1], createAt: Date()))
-        typingMessage = ""
+        switch self.messagetype {
+        case .text:
+            
+            chatHelper.sendMessage(MockMessage(id: UUID().uuidString, kind: .text(typingMessage), mockuser: DataSource.mockusers[1], createAt: Date()))
+            typingMessage = ""
+            break;
+            
+        case .photo:
+            print("sending photo")
+            let mediaPhoto : MediaItemRow = .init(image: self.selectedImage, placeholderImage: self.selectedImage!)
+            chatHelper.sendMessage(MockMessage(id: UUID().uuidString, kind: .photo(mediaPhoto), mockuser: DataSource.me!, createAt: Date()))
+            self.selectedImage = nil
+            
+            
+        default:
+            print("not supported yet")
+        }
+        
+        self.messagetype = .text
+        
     }
 }
 
@@ -75,4 +135,8 @@ struct InputMessageBar_Previews: PreviewProvider {
             InputMessageBar(typingMessage: Binding<String>.constant("s")).background(Color.white)
         }
     }
+}
+
+enum SenderMessageType {
+    case text, photo, video, file, location, contact
 }

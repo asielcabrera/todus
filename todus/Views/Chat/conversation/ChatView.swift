@@ -26,7 +26,7 @@ struct ChatView: View {
     }
     
     var body: some View {
-//        NavigationView {
+        NavigationView {
             VStack {
                 
                 List(chatHelper.realTimeMessages) { msg in
@@ -54,8 +54,28 @@ struct ChatView: View {
                     }
                 }
             }))
-                .navigationBarTitle(Text(DataSource.mockusers[0].name), displayMode: .inline)
-//        }
+                .navigationBarTitle("", displayMode: .inline)
+                .navigationBarItems(leading: EmptyView(), center:
+                    
+                    Button(action: {
+                        print("press title view")
+                    }) {
+                        ChatTitleView(image: UIImage(named: DataSource.you.avatar)!, name: DataSource.you.name)
+                    }.buttonStyle(PlainButtonStyle())
+                    
+                    , trailing:
+                                
+                        Button(action: {
+                            print("press trailing item")
+                        }) {
+                            Image(systemName: "phone")
+                                .font(.system(size: 20))
+                        }
+                        .accentColor(.primaryTodusColor)
+                        .padding(.leading, 50)
+                    
+                )
+        }
     }
     
     
