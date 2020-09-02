@@ -31,6 +31,8 @@
 		81C0B09224FDA94B00A14BB0 /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B09124FDA94B00A14BB0 /* View++.swift */; };
 		81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF317D24FC129D00FE2F26 /* Triangle.swift */; };
 		81CF318024FC1C1D00FE2F26 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */; };
+		81D0897A24FFFD5C00F79187 /* ChatTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0897924FFFD5C00F79187 /* ChatTitleView.swift */; };
+		81D0897C250005E900F79187 /* NavigationBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0897B250005E900F79187 /* NavigationBarItemExtension.swift */; };
 		81D89D6E24FC490D00E4E2F6 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 81D89D6D24FC490D00E4E2F6 /* Introspect */; };
 		81D89D7024FC51F800E4E2F6 /* ScrollToBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D89D6F24FC51F800E4E2F6 /* ScrollToBottom.swift */; };
 		81D89D7224FC593900E4E2F6 /* Binding++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D89D7124FC593900E4E2F6 /* Binding++.swift */; };
@@ -78,6 +80,8 @@
 		81C0B09124FDA94B00A14BB0 /* View++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View++.swift"; sourceTree = "<group>"; };
 		81CF317D24FC129D00FE2F26 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		81D0897924FFFD5C00F79187 /* ChatTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTitleView.swift; sourceTree = "<group>"; };
+		81D0897B250005E900F79187 /* NavigationBarItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItemExtension.swift; sourceTree = "<group>"; };
 		81D89D6F24FC51F800E4E2F6 /* ScrollToBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToBottom.swift; sourceTree = "<group>"; };
 		81D89D7124FC593900E4E2F6 /* Binding++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding++.swift"; sourceTree = "<group>"; };
 		B221015F24F0C31C0052E7CD /* todus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +139,7 @@
 				8122CB5A24F95A430008CD6D /* KeyboardAware.swift */,
 				81CF317F24FC1C1D00FE2F26 /* ColorExtension.swift */,
 				81D89D6F24FC51F800E4E2F6 /* ScrollToBottom.swift */,
+				81D0897B250005E900F79187 /* NavigationBarItemExtension.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				8122CB5224F9458F0008CD6D /* ChatView.swift */,
 				8122CB5424F94A1E0008CD6D /* InputMessageBar.swift */,
 				8122CB4E24F943590008CD6D /* ChatHelper.swift */,
+				81D0897924FFFD5C00F79187 /* ChatTitleView.swift */,
 			);
 			path = conversation;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 				8122CB4724F885BC0008CD6D /* CounterNotifications.swift in Sources */,
 				B221018F24F0CE3B0052E7CD /* TopView.swift in Sources */,
 				8183496324FEB1F3003DB14E /* CaptureImageView.swift in Sources */,
+				81D0897C250005E900F79187 /* NavigationBarItemExtension.swift in Sources */,
 				8122CB4D24F9416C0008CD6D /* MessageView.swift in Sources */,
 				8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */,
 				8183496224FEB1F3003DB14E /* ImageCoordinator.swift in Sources */,
@@ -407,6 +414,7 @@
 				8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */,
 				B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */,
 				81C0B08324FD544200A14BB0 /* DataSource.swift in Sources */,
+				81D0897A24FFFD5C00F79187 /* ChatTitleView.swift in Sources */,
 				B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */,
 				8122CB4324F8852D0008CD6D /* ContactChatCell.swift in Sources */,
 				8122CB5924F9565A0008CD6D /* KeyboardHost.swift in Sources */,
