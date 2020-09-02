@@ -26,7 +26,7 @@ struct ChatView: View {
     }
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 
                 List(chatHelper.realTimeMessages) { msg in
@@ -72,10 +72,10 @@ struct ChatView: View {
                                 .font(.system(size: 20))
                         }
                         .accentColor(.primaryTodusColor)
-                        .padding(.leading, 50)
+                        .padding(.leading, 30)
                     
                 )
-        }
+//        }
     }
     
     
