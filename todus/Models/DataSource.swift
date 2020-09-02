@@ -13,11 +13,11 @@ import UIKit
 ///Sample data for testing 
 struct DataSource {
     static let mockusers = [
-                            MockUser(name: "Rosse🍒", avatar: "", isCurrentUser: false),
+                            MockUser(name: "Rosse🍒", avatar: "p1", isCurrentUser: false),
                             MockUser(name: "Emily", avatar: "p1", isCurrentUser: true),
                             MockUser(name: "Jonh", avatar: "p2", isCurrentUser: true),
                             MockUser(name: "Catherine", avatar: "p3", isCurrentUser: true),
-                            MockUser(name: "Emma", avatar: "p4", isCurrentUser: true),
+                            MockUser(name: "Emma", avatar: "", isCurrentUser: true),
                             MockUser(name: "Lina", avatar: "p5", isCurrentUser: true),
                             MockUser(name: "Steve Jobs", avatar: "p6", isCurrentUser: true),
                             MockUser(name: "Roy", avatar: "p7", isCurrentUser: true),
@@ -26,7 +26,7 @@ struct DataSource {
                             MockUser(name: "Kavuya", avatar: "p3", isCurrentUser: true),
                             MockUser(name: "Julie", avatar: "p4", isCurrentUser: true),
                             MockUser(name: "Lisa", avatar: "p5", isCurrentUser: true),
-                            MockUser(name: "Me😎", avatar: "", isCurrentUser: true)
+                            MockUser(name: "Me😎", avatar: "p7", isCurrentUser: true)
     ]
     static let you = DataSource.mockusers[0]
     static let me = DataSource.mockusers.last

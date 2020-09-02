@@ -49,6 +49,7 @@
 		B221019324F0D0D70052E7CD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019224F0D0D70052E7CD /* BottomView.swift */; };
 		B221019524F0D21B0052E7CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019424F0D21B0052E7CD /* CellView.swift */; };
 		B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019624F0D2A10052E7CD /* ContentMessageView.swift */; };
+		B249808A24FF28AE00BA5F74 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249808924FF28AE00BA5F74 /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		B221019224F0D0D70052E7CD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		B221019424F0D21B0052E7CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B221019624F0D2A10052E7CD /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		B249808924FF28AE00BA5F74 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 		B221017A24F0C34E0052E7CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B249808824FF288D00BA5F74 /* Story */,
 				8122CB3E24F8816B0008CD6D /* TabbarController */,
 				B221017D24F0C48F0052E7CD /* Chat */,
 				B221017F24F0C4B40052E7CD /* Groups */,
@@ -292,6 +295,14 @@
 				B221018A24F0CC9B0052E7CD /* Chats.swift */,
 			);
 			path = chatlist;
+			sourceTree = "<group>";
+		};
+		B249808824FF288D00BA5F74 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				B249808924FF28AE00BA5F74 /* Story.swift */,
+			);
+			path = Story;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +390,7 @@
 				B221017C24F0C41D0052E7CD /* Home.swift in Sources */,
 				8122CB4524F885880008CD6D /* InitialLettersView.swift in Sources */,
 				81C0B08B24FD64B100A14BB0 /* MediaItem.swift in Sources */,
+				B249808A24FF28AE00BA5F74 /* Story.swift in Sources */,
 				8122CB5324F9458F0008CD6D /* ChatView.swift in Sources */,
 				B221019324F0D0D70052E7CD /* BottomView.swift in Sources */,
 				B221018724F0C5B50052E7CD /* CustumShapes.swift in Sources */,
