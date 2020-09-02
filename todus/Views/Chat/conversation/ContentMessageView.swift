@@ -21,7 +21,8 @@ struct ContentMessageView: View {
         case .text(let text):
             return TextCell(text: text, date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser).embedInAnyView()
         case.photo(let mediaItem):
-            return ImageCell(image: mediaItem.image!, date: message.createAt, size: mediaItem.size, isCurrentUser: message.mockuser.isCurrentUser).embedInAnyView()
+//            return ImageCell(image: mediaItem.image!, date: message.createAt, size: mediaItem.size, isCurrentUser: message.mockuser.isCurrentUser).embedInAnyView()
+            return ImageCell(item: MediaItemRow(image: mediaItem.image!, placeholderImage: mediaItem.image!), date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser).embedInAnyView()
 //            return TextCell(text: "Not supported yet", date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)
 //        default:
 //            return TextCell(text: "unknow message type", date: message.createAt, isCurrentUser: message.mockuser.isCurrentUser)

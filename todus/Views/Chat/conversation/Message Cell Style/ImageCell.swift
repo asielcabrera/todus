@@ -9,37 +9,39 @@
 import SwiftUI
 
 struct ImageCell: View {
-    let image : UIImage
+    
+    let item : MediaItemRow
+    
+//    let image : UIImage
     let date : Date
-    let size : CGSize
+//    let size : CGSize
     let isCurrentUser: Bool
     
     var width : CGFloat {
-        image.size.width
+        item.image!.size.width
     }
     var height : CGFloat {
-        image.size.height
+        item.image!.size.height
         
     }
     var isLandscape: Bool {
-        size.width > size.height
+        item.size.width > item.size.height
     }
     
     var body: some View {
         
         ZStack(alignment: .bottomTrailing){
-            Image(uiImage: image)
+            Image(uiImage: item.image!)
                 .resizable()
                 .aspectRatio(width / height, contentMode: isLandscape ? .fit : .fill)
-                .frame(width: size.width, height: isLandscape ? nil :  size.height)
+                .frame(width: isLandscape ? 300 : 250, height: isLandscape ? nil :  350)
             
             DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
                 .padding(3)
                 .padding(.horizontal, 6)
                 .background(Color.black.opacity(0.3))
                 .cornerRadius(10)
-                .padding(.vertical, 10)
-                .padding(.horizontal, 5)
+                .padding(10)
             
             
         }

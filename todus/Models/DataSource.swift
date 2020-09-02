@@ -55,7 +55,9 @@ struct MediaItemRow : MediaItem{
     
     var placeholderImage: UIImage
     
-    var size: CGSize = CGSize(width: 250, height: 250)
+    var size: CGSize {
+        return CGSize(width: image?.size.width ?? 250, height: image?.size.height ?? 250)
+    }
     
     
 }
