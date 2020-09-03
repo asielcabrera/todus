@@ -58,8 +58,10 @@ struct StoryView: View {
                     Button(action: {
                         
                     }, label: {
-                        Image(systemName: "gear")
-                            .foregroundColor(.white)
+                        Image("menu")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(Color("secondary").opacity(0.4))
                     })
                 }.padding(.top, 30)
                     .padding(.horizontal)
@@ -85,7 +87,7 @@ struct StoryView: View {
                     }
                 }
             }
-            .onAppear { self.storyTimer.start() }
+            .onAppear { self.storyTimer.start(endind: {}) }
             .onDisappear { self.storyTimer.cancel() }
         }
     }
@@ -131,11 +133,12 @@ class StoryTimer: ObservableObject {
         self.publisher = Timer.publish(every: 0.1, on: .main, in: .default)
     }
     
-    func start() {
+    func start(endind: @escaping () -> Void ) {
         self.cancellable = self.publisher.autoconnect().sink(receiveValue: {  _ in
             var newProgress = self.progress + (0.1 / self.interval)
             if Int(newProgress) >= self.max {
                 newProgress = 0
+                endind()
                 self.cancel()
             }
             self.progress = newProgress
@@ -150,17 +153,21 @@ class StoryTimer: ObservableObject {
         self.cancellable?.cancel()
     }
     func pause(){
-       
-        if !self.ispause {
+        
+        if !self.ispause { 
             self.cancellable?.cancel()
             print("pause")
             self.ispause = true
         } else {
-            self.start()
+            self.start(endind: {})
             self.ispause = false
             print(self.progress)
             print("run")
         }
         
     }
+}
+
+public func prueba<Result>( _ body: () throws -> Result) rethrows -> Result {
+    try body()
 }

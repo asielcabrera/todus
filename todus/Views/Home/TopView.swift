@@ -10,16 +10,17 @@ import SwiftUI
 
 struct TopView: View {
     @State var search = ""
+    @State var timer: Timer?
+    @State var showStory: Bool = false
     @State var isShow: Bool = false
     @Binding var expand : Bool
+    @Binding var storyShow: Bool
+    @Binding var isShowNotification: Bool
+    
     
     var body : some View{
         
         VStack(spacing: 17){
-            
-            
-            
-            
             HStack{
                 
                 Text("Todus")
@@ -42,35 +43,49 @@ struct TopView: View {
                 .onTapGesture {
                     self.endEditing(true)
             }
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 18){
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "plus")
-                            .resizable()
-                            .frame(width: 22, height: 22)
-                            .foregroundColor(Color("secondary"))
-                            .padding(18)
-                    }
-                    .background(Color("secondary").opacity(0.5))
-                    .clipShape(Circle())
-                    
-                    ForEach(1...7,id: \.self){i in
-                        
+            if self.storyShow {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 18){
                         Button(action: {
-                            
+                            withAnimation {
+                                self.isShowNotification.toggle()
+                                self.timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { timer in
+                                    withAnimation {
+                                        if self.isShowNotification {
+                                            self.isShowNotification.toggle()
+                                        }
+                                    }
+                                }
+                            }
                         }) {
-                            
-                            Image("p\(i)")
+                            Image(systemName: "plus")
                                 .resizable()
-                                .renderingMode(.original)
-                                .frame(width: 60, height: 60)
-                                .clipShape(Circle())
-                                .shadow(radius: 3)
-                                .overlay(Circle().stroke(Color.secondaryBubbleColor, lineWidth: 1))
+                                .frame(width: 22, height: 22)
+                                .foregroundColor(Color("secondary"))
+                                .padding(18)
+                        }
+                        .background(Color("secondary").opacity(0.5))
+                        .clipShape(Circle())
+                        
+                        ForEach(1...7,id: \.self){i in
                             
+                            Button(action: {
+                                self.showStory = true
+                            }) {
+                                
+                                Image("p\(i)")
+                                    .resizable()
+                                    .renderingMode(.original)
+                                    .frame(width: 60, height: 60)
+                                    .clipShape(Circle())
+                                    .shadow(radius: 3)
+                                    .overlay(Circle().stroke(Color.secondaryBubbleColor, lineWidth: 1))
+                                
+                            }
+//                            .sheet(item: self.$showStory, content:
+////                                StoryView(imageNames: ["image01","image02","image03","image04","image05","image06","image07"])
+////                                Text("hola mundo")
+//                            )
                         }
                     }
                 }
@@ -95,9 +110,6 @@ struct TopView: View {
                     .padding(.bottom, 10)
             }
             
-            
-            
-            
         }.padding()
             .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
             .background(Color("primary"))
@@ -113,6 +125,6 @@ struct TopView: View {
 
 struct TopView_Previews: PreviewProvider {
     static var previews: some View {
-        TopView(search: "", expand: .constant(false))
+        TopView(search: "", expand: .constant(false), storyShow: .constant(true), isShowNotification: .constant(false))
     }
 }

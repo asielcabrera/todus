@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isShowNotification: Bool = false
+   
+    
     var body: some View {
-        Home()
+        ZStack{
+           
+            localNotifications(isShowNotification: self.$isShowNotification)
+            Home(isShowNotification: self.$isShowNotification)
+        }
     }
 }
 

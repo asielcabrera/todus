@@ -11,15 +11,19 @@ import SwiftUI
 struct Groups: View {
     var body : some View{
         
-        GeometryReader{_ in
+        GeometryReader{ _ in
             
-            VStack{
-                
-                Text("Group")
+            VStack(spacing: 0){
+                TopView(expand: .constant(true), storyShow: .constant(false), isShowNotification: .constant(false))
+                    .zIndex(22)
+                    
+                    
+                Contacts()
+                    .offset(y: -8)
             }
             
         }
-        .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+//        .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
         .background(Color.white)
         .clipShape(BorderCircleShape())
         .padding(.bottom, 22)

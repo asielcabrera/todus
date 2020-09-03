@@ -11,6 +11,8 @@ import SwiftUI
 struct Home: View {
     @State var index = 0
     @State var expand = false
+    @Binding var isShowNotification: Bool
+    
     var body : some View{
           NavigationView {
             ZStack{
@@ -25,7 +27,7 @@ struct Home: View {
                     ZStack{
                       
                             
-                        Chats(expand: self.$expand).opacity(self.index == 0 ? 1 : 0)
+                        Chats(expand: self.$expand, isShowNotification: self.$isShowNotification).opacity(self.index == 0 ? 1 : 0)
                         
                         Groups().opacity(self.index == 1 ? 1 : 0)
                         
@@ -45,7 +47,7 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home(isShowNotification: .constant(false))
     }
 }
 

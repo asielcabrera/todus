@@ -50,6 +50,10 @@
 		B221019524F0D21B0052E7CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019424F0D21B0052E7CD /* CellView.swift */; };
 		B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019624F0D2A10052E7CD /* ContentMessageView.swift */; };
 		B249808A24FF28AE00BA5F74 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249808924FF28AE00BA5F74 /* Story.swift */; };
+		B2AC2B9F250057E400925A67 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC2B9E250057E400925A67 /* Contacts.swift */; };
+		B2AC2BA42500677D00925A67 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC2BA32500677D00925A67 /* ContactStore.swift */; };
+		B2AC2BA72500879400925A67 /* localNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC2BA62500879400925A67 /* localNotifications.swift */; };
+		B2AC2BA92500BC4900925A67 /* LocalNotificationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC2BA82500BC4900925A67 /* LocalNotificationBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +101,11 @@
 		B221019424F0D21B0052E7CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B221019624F0D2A10052E7CD /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
 		B249808924FF28AE00BA5F74 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		B2AC2B9E250057E400925A67 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		B2AC2BA125005FC400925A67 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		B2AC2BA32500677D00925A67 /* ContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStore.swift; sourceTree = "<group>"; };
+		B2AC2BA62500879400925A67 /* localNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localNotifications.swift; sourceTree = "<group>"; };
+		B2AC2BA82500BC4900925A67 /* LocalNotificationBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +188,7 @@
 			children = (
 				B221016124F0C31C0052E7CD /* todus */,
 				B221016024F0C31C0052E7CD /* Products */,
+				B2AC2BA025005FC400925A67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +230,8 @@
 		B221017A24F0C34E0052E7CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B2AC2BA52500877100925A67 /* LocalNotifications */,
+				B249808B2500533B00BA5F74 /* Contacts */,
 				B249808824FF288D00BA5F74 /* Story */,
 				8122CB3E24F8816B0008CD6D /* TabbarController */,
 				B221017D24F0C48F0052E7CD /* Chat */,
@@ -303,6 +315,32 @@
 				B249808924FF28AE00BA5F74 /* Story.swift */,
 			);
 			path = Story;
+			sourceTree = "<group>";
+		};
+		B249808B2500533B00BA5F74 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				B2AC2B9E250057E400925A67 /* Contacts.swift */,
+				B2AC2BA32500677D00925A67 /* ContactStore.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		B2AC2BA025005FC400925A67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2AC2BA125005FC400925A67 /* Contacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2AC2BA52500877100925A67 /* LocalNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				B2AC2BA62500879400925A67 /* localNotifications.swift */,
+				B2AC2BA82500BC4900925A67 /* LocalNotificationBase.swift */,
+			);
+			path = LocalNotifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,13 +438,16 @@
 				B221018424F0C5270052E7CD /* Settings.swift in Sources */,
 				81C0B08124FD544200A14BB0 /* MockUser.swift in Sources */,
 				B221019124F0D01A0052E7CD /* CenterView.swift in Sources */,
+				B2AC2BA92500BC4900925A67 /* LocalNotificationBase.swift in Sources */,
 				8122CB4724F885BC0008CD6D /* CounterNotifications.swift in Sources */,
 				B221018F24F0CE3B0052E7CD /* TopView.swift in Sources */,
 				8122CB4D24F9416C0008CD6D /* MessageView.swift in Sources */,
 				8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */,
 				8122CB5524F94A1E0008CD6D /* InputMessageBar.swift in Sources */,
 				8122CB4F24F9435A0008CD6D /* ChatHelper.swift in Sources */,
+				B2AC2B9F250057E400925A67 /* Contacts.swift in Sources */,
 				81C0B08E24FDA51E00A14BB0 /* TextCell.swift in Sources */,
+				B2AC2BA42500677D00925A67 /* ContactStore.swift in Sources */,
 				B221019524F0D21B0052E7CD /* CellView.swift in Sources */,
 				8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */,
 				B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */,
@@ -418,6 +459,7 @@
 				81C0B09224FDA94B00A14BB0 /* View++.swift in Sources */,
 				81D89D7224FC593900E4E2F6 /* Binding++.swift in Sources */,
 				B221018224F0C4FF0052E7CD /* Groups.swift in Sources */,
+				B2AC2BA72500879400925A67 /* localNotifications.swift in Sources */,
 				B221018B24F0CC9B0052E7CD /* Chats.swift in Sources */,
 				81D89D7024FC51F800E4E2F6 /* ScrollToBottom.swift in Sources */,
 				81CF318024FC1C1D00FE2F26 /* ColorExtension.swift in Sources */,

@@ -17,7 +17,7 @@ struct TabbarMainView: View {
         TabView(selection: $tabSelection){
             
 //            ContactsView()
-            Chats(expand: Binding<Bool>.constant(false)).tabItem {
+            Chats(expand: .constant(false), isShowNotification: .constant(false)).tabItem {
                 Text(navTitles[0])
                 Image(systemName: "person.crop.circle.fill")
                     .font(.system(size: 25))
