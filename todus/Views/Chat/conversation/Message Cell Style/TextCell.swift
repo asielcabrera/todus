@@ -21,7 +21,8 @@ struct TextCell : View {
             //Date and CheckMars
             DateCheckMarkView(isCurrentUser: isCurrentUser, date: date)
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.vertical, 10)
         .background(isCurrentUser ? Color.primaryTodusColor : Color.secondaryBubbleColor)
         .clipShape(CustomChatCorner(isCurrentUser: self.isCurrentUser))
         .foregroundColor(isCurrentUser ? .white : .black)
