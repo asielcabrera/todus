@@ -18,6 +18,7 @@
 		8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5624F955380008CD6D /* MultilineTextField.swift */; };
 		8122CB5924F9565A0008CD6D /* KeyboardHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5824F9565A0008CD6D /* KeyboardHost.swift */; };
 		8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CB5A24F95A430008CD6D /* KeyboardAware.swift */; };
+		81AD6956251265E7000A76C5 /* TestingLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AD6955251265E7000A76C5 /* TestingLocalNotification.swift */; };
 		81C0B08124FD544200A14BB0 /* MockUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B07E24FD544200A14BB0 /* MockUser.swift */; };
 		81C0B08224FD544200A14BB0 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B07F24FD544200A14BB0 /* MockMessage.swift */; };
 		81C0B08324FD544200A14BB0 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C0B08024FD544200A14BB0 /* DataSource.swift */; };
@@ -69,6 +70,7 @@
 		8122CB5624F955380008CD6D /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		8122CB5824F9565A0008CD6D /* KeyboardHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHost.swift; sourceTree = "<group>"; };
 		8122CB5A24F95A430008CD6D /* KeyboardAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAware.swift; sourceTree = "<group>"; };
+		81AD6955251265E7000A76C5 /* TestingLocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingLocalNotification.swift; sourceTree = "<group>"; };
 		81C0B07E24FD544200A14BB0 /* MockUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUser.swift; sourceTree = "<group>"; };
 		81C0B07F24FD544200A14BB0 /* MockMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
 		81C0B08024FD544200A14BB0 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 			children = (
 				B2AC2BA62500879400925A67 /* localNotifications.swift */,
 				B2AC2BA82500BC4900925A67 /* LocalNotificationBase.swift */,
+				81AD6955251265E7000A76C5 /* TestingLocalNotification.swift */,
 			);
 			path = LocalNotifications;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				81C0B08E24FDA51E00A14BB0 /* TextCell.swift in Sources */,
 				B2AC2BA42500677D00925A67 /* ContactStore.swift in Sources */,
 				B221019524F0D21B0052E7CD /* CellView.swift in Sources */,
+				81AD6956251265E7000A76C5 /* TestingLocalNotification.swift in Sources */,
 				8122CB5B24F95A430008CD6D /* KeyboardAware.swift in Sources */,
 				B221016824F0C31C0052E7CD /* todus.xcdatamodeld in Sources */,
 				B26899DD250D896D0023DF8C /* SearchNavigation.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct localNotifications: View {
     
     @Binding var isShowNotification: Bool
-    @State var ytraslate: CGFloat = -350
+    @State var ytraslate: CGFloat = -(UIScreen.main.bounds.height/2 - 100)
     
     var body: some View {
         localNotificationBase {
@@ -54,7 +54,7 @@ struct localNotifications: View {
 
 struct localNotifications_Previews: PreviewProvider {
     static var previews: some View {
-        localNotifications(isShowNotification: .constant(false))
+        localNotifications(isShowNotification: .constant(true))
     }
 }
 
