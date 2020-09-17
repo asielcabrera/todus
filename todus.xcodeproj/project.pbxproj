@@ -49,6 +49,7 @@
 		B221019324F0D0D70052E7CD /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019224F0D0D70052E7CD /* BottomView.swift */; };
 		B221019524F0D21B0052E7CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019424F0D21B0052E7CD /* CellView.swift */; };
 		B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019624F0D2A10052E7CD /* ContentMessageView.swift */; };
+		B228274B2513136200F18823 /* FlotatingButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228274A2513136200F18823 /* FlotatingButtom.swift */; };
 		B249808A24FF28AE00BA5F74 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249808924FF28AE00BA5F74 /* Story.swift */; };
 		B25697692512C26A001122D6 /* NotificationHUB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25697682512C269001122D6 /* NotificationHUB.swift */; };
 		B26899DD250D896D0023DF8C /* SearchNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26899DC250D896D0023DF8C /* SearchNavigation.swift */; };
@@ -102,6 +103,7 @@
 		B221019224F0D0D70052E7CD /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		B221019424F0D21B0052E7CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B221019624F0D2A10052E7CD /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		B228274A2513136200F18823 /* FlotatingButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlotatingButtom.swift; sourceTree = "<group>"; };
 		B249808924FF28AE00BA5F74 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		B25697682512C269001122D6 /* NotificationHUB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHUB.swift; sourceTree = "<group>"; };
 		B26899DC250D896D0023DF8C /* SearchNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigation.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 		B221017A24F0C34E0052E7CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B22827492513133C00F18823 /* FlotatingButtom */,
 				B2AC2BA52500877100925A67 /* LocalNotifications */,
 				B249808B2500533B00BA5F74 /* Contacts */,
 				B249808824FF288D00BA5F74 /* Story */,
@@ -312,6 +315,14 @@
 				B221018A24F0CC9B0052E7CD /* Chats.swift */,
 			);
 			path = chatlist;
+			sourceTree = "<group>";
+		};
+		B22827492513133C00F18823 /* FlotatingButtom */ = {
+			isa = PBXGroup;
+			children = (
+				B228274A2513136200F18823 /* FlotatingButtom.swift */,
+			);
+			path = FlotatingButtom;
 			sourceTree = "<group>";
 		};
 		B249808824FF288D00BA5F74 /* Story */ = {
@@ -429,6 +440,7 @@
 				B221016324F0C31C0052E7CD /* AppDelegate.swift in Sources */,
 				81C0B08824FD631E00A14BB0 /* MessageKind.swift in Sources */,
 				B221016524F0C31C0052E7CD /* SceneDelegate.swift in Sources */,
+				B228274B2513136200F18823 /* FlotatingButtom.swift in Sources */,
 				81CF317E24FC129D00FE2F26 /* Triangle.swift in Sources */,
 				81C0B08224FD544200A14BB0 /* MockMessage.swift in Sources */,
 				B221017C24F0C41D0052E7CD /* Home.swift in Sources */,
