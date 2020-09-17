@@ -50,6 +50,7 @@
 		B221019524F0D21B0052E7CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019424F0D21B0052E7CD /* CellView.swift */; };
 		B221019724F0D2A10052E7CD /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221019624F0D2A10052E7CD /* ContentMessageView.swift */; };
 		B249808A24FF28AE00BA5F74 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = B249808924FF28AE00BA5F74 /* Story.swift */; };
+		B25697692512C26A001122D6 /* NotificationHUB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25697682512C269001122D6 /* NotificationHUB.swift */; };
 		B26899DD250D896D0023DF8C /* SearchNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26899DC250D896D0023DF8C /* SearchNavigation.swift */; };
 		B2AC2B9F250057E400925A67 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC2B9E250057E400925A67 /* Contacts.swift */; };
 		B2AC2BA42500677D00925A67 /* ContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AC2BA32500677D00925A67 /* ContactStore.swift */; };
@@ -102,6 +103,7 @@
 		B221019424F0D21B0052E7CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B221019624F0D2A10052E7CD /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
 		B249808924FF28AE00BA5F74 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		B25697682512C269001122D6 /* NotificationHUB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHUB.swift; sourceTree = "<group>"; };
 		B26899DC250D896D0023DF8C /* SearchNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigation.swift; sourceTree = "<group>"; };
 		B2AC2B9E250057E400925A67 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		B2AC2BA125005FC400925A67 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
@@ -342,6 +344,7 @@
 			children = (
 				B2AC2BA62500879400925A67 /* localNotifications.swift */,
 				B2AC2BA82500BC4900925A67 /* LocalNotificationBase.swift */,
+				B25697682512C269001122D6 /* NotificationHUB.swift */,
 			);
 			path = LocalNotifications;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				8122CB5724F955380008CD6D /* MultilineTextField.swift in Sources */,
 				8122CB5524F94A1E0008CD6D /* InputMessageBar.swift in Sources */,
 				8122CB4F24F9435A0008CD6D /* ChatHelper.swift in Sources */,
+				B25697692512C26A001122D6 /* NotificationHUB.swift in Sources */,
 				B2AC2B9F250057E400925A67 /* Contacts.swift in Sources */,
 				81C0B08E24FDA51E00A14BB0 /* TextCell.swift in Sources */,
 				B2AC2BA42500677D00925A67 /* ContactStore.swift in Sources */,
